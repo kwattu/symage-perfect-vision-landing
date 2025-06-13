@@ -1,4 +1,5 @@
 
+
 import { TrendingDown, DollarSign, Zap } from "lucide-react";
 
 const Problem = () => {
@@ -24,42 +25,61 @@ const Problem = () => {
             </p>
           </div>
           
-          {/* Cleaner stats row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center p-8 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 animate-slide-in-left">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-xl overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=400&fit=crop" 
-                  alt="Circuit board defect"
-                  className="w-full h-full object-cover"
-                />
+          {/* Elegant asymmetrical stats layout */}
+          <div className="mb-16">
+            {/* Main featured stat */}
+            <div className="bg-gradient-to-r from-symage-purple to-symage-blue rounded-3xl p-12 mb-8 text-white animate-scale-in">
+              <div className="flex flex-col md:flex-row items-center justify-between">
+                <div className="mb-6 md:mb-0">
+                  <div className="text-6xl md:text-7xl font-bold mb-4 font-sans">$1.3T</div>
+                  <h3 className="text-2xl font-semibold mb-2">Global Annual Losses</h3>
+                  <p className="text-blue-100 text-lg">Due to poor quality control worldwide</p>
+                </div>
+                <div className="w-32 h-32 rounded-2xl overflow-hidden border-4 border-white/20">
+                  <img 
+                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=400&fit=crop" 
+                    alt="Manufacturing monitoring"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              <div className="text-4xl font-bold text-symage-purple mb-3 font-sans">30%</div>
-              <p className="text-symage-medium-gray font-medium">Error rate in manual inspection</p>
             </div>
             
-            <div className="text-center p-8 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 animate-scale-in" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
-              <div className="w-16 h-16 mx-auto mb-6 rounded-xl overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=400&fit=crop" 
-                  alt="Manufacturing monitoring"
-                  className="w-full h-full object-cover"
-                />
+            {/* Supporting stats in elegant grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 animate-slide-in-left">
+                <div className="flex items-start space-x-6">
+                  <div className="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                    <img 
+                      src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=400&fit=crop" 
+                      alt="Circuit board defect"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <div className="text-5xl font-bold text-symage-purple mb-3 font-sans">30%</div>
+                    <h4 className="text-xl font-semibold text-symage-text-dark mb-2">Human Error Rate</h4>
+                    <p className="text-symage-medium-gray">Even trained inspectors miss critical defects</p>
+                  </div>
+                </div>
               </div>
-              <div className="text-4xl font-bold text-symage-blue mb-3 font-sans">$1.3T</div>
-              <p className="text-symage-medium-gray font-medium">Global annual losses to poor quality</p>
-            </div>
-            
-            <div className="text-center p-8 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 animate-slide-in-left" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
-              <div className="w-16 h-16 mx-auto mb-6 rounded-xl overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop" 
-                  alt="Quality control technology"
-                  className="w-full h-full object-cover"
-                />
+              
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 animate-slide-in-left" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
+                <div className="flex items-start space-x-6">
+                  <div className="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                    <img 
+                      src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop" 
+                      alt="Quality control technology"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <div className="text-5xl font-bold text-symage-purple mb-3 font-sans">30/100</div>
+                    <h4 className="text-xl font-semibold text-symage-text-dark mb-2">Products at Risk</h4>
+                    <p className="text-symage-medium-gray">Potentially flawed items reach customers</p>
+                  </div>
+                </div>
               </div>
-              <div className="text-4xl font-bold text-symage-purple mb-3 font-sans">30/100</div>
-              <p className="text-symage-medium-gray font-medium">Potentially flawed products approved</p>
             </div>
           </div>
           
@@ -105,3 +125,4 @@ const Problem = () => {
 };
 
 export default Problem;
+
