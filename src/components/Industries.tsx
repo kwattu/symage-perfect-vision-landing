@@ -5,37 +5,37 @@ const Industries = () => {
       image: "https://images.unsplash.com/photo-1493238792000-8113da705763?w=400&h=300&fit=crop",
       title: "Automotive & Aerospace",
       description: "Identifying surface imperfections, weld defects, and composite material flaws where safety and performance are non-negotiable.",
-      color: "from-symage-blue to-symage-purple"
+      duotone: "from-symage-blue/80 to-symage-dark/60"
     },
     {
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
       title: "Electronics & Semiconductor",
       description: "Detecting microscopic defects on PCBs, silicon wafers, and integrated circuits that are impossible for the human eye to see consistently.",
-      color: "from-symage-purple to-symage-pink"
+      duotone: "from-symage-purple/80 to-symage-dark/60"
     },
     {
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
       title: "Medical Devices & Pharmaceuticals",
       description: "Ensuring the integrity of sterile packaging, verifying pill and capsule quality, and inspecting medical implants for life-or-death compliance.",
-      color: "from-symage-pink to-symage-lime"
+      duotone: "from-symage-blue/80 to-symage-purple/60"
     },
     {
       image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop",
       title: "Consumer Packaged Goods (CPG)",
       description: "Guaranteeing label placement, checking for packaging damage, and ensuring product consistency to protect brand image.",
-      color: "from-symage-lime to-symage-blue"
+      duotone: "from-symage-purple/80 to-symage-blue/60"
     },
     {
       image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=300&fit=crop",
       title: "Plastics & Metals Manufacturing",
       description: "Finding molding flaws, surface scratches, color inconsistencies, and structural weaknesses in raw materials and finished goods.",
-      color: "from-symage-purple to-symage-medium-gray"
+      duotone: "from-symage-dark/80 to-symage-purple/60"
     },
     {
       image: "https://images.unsplash.com/photo-1567306301408-9b74779a11af?w=400&h=300&fit=crop",
       title: "Food & Beverage",
       description: "Spotting foreign contaminants, verifying seal integrity, and ensuring quality standards to meet safety regulations and maintain consumer confidence.",
-      color: "from-symage-lime to-symage-pink"
+      duotone: "from-symage-blue/80 to-symage-dark/60"
     }
   ];
 
@@ -71,7 +71,7 @@ const Industries = () => {
                     alt={industry.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${industry.color} opacity-70`}></div>
+                  <div className={`absolute inset-0 bg-gradient-to-t ${industry.duotone}`}></div>
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-xl font-bold text-white mb-2 font-sans">{industry.title}</h3>
                   </div>
