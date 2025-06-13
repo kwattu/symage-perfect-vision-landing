@@ -13,9 +13,6 @@ const Problem = () => {
         <div className="max-w-6xl mx-auto">
           {/* Clean section header */}
           <div className="text-center mb-16 animate-fade-in">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-symage-purple/10 rounded-xl mb-6">
-              <AlertTriangle className="h-8 w-8 text-symage-purple" />
-            </div>
             <h2 className="text-4xl md:text-5xl font-bold text-symage-text-dark mb-6 font-sans leading-tight">
               The Real Cost of a 
               <span className="block text-symage-purple">
