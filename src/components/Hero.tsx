@@ -10,16 +10,16 @@ const Hero = () => {
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-symage-purple/5 rounded-full blur-3xl"></div>
       
+      {/* Badge moved to upper left corner */}
+      <div className="absolute top-8 left-8 animate-fade-in">
+        <div className="inline-flex items-center px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
+          <Sparkles className="h-4 w-4 mr-2 text-symage-blue" />
+          <span className="text-sm font-medium text-white">Revolutionary AI Training Data</span>
+        </div>
+      </div>
+      
       <div className="relative container mx-auto px-6 py-20 min-h-screen flex items-center">
         <div className="max-w-5xl mx-auto text-center text-white">
-          {/* Simplified badge */}
-          <div className="animate-fade-in mb-8">
-            <div className="inline-flex items-center px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
-              <Sparkles className="h-4 w-4 mr-2 text-symage-blue" />
-              <span className="text-sm font-medium">Revolutionary AI Training Data</span>
-            </div>
-          </div>
-          
           {/* Four-line headline with pulsing text */}
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8 font-sans">
