@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Eye, Target, Zap } from "lucide-react";
 
@@ -29,14 +28,11 @@ const Hero = () => {
             </p>
           </div>
           
-          {/* CTA Buttons */}
-          <div className="animate-scale-in flex flex-col sm:flex-row gap-4 justify-center mb-16" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+          {/* CTA Button */}
+          <div className="animate-scale-in flex justify-center mb-16" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
             <Button size="lg" className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-8 py-4 h-auto">
               Claim Free Proof-of-Concept Dataset
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="lg" className="border-symage-blue text-symage-blue hover:bg-symage-blue hover:text-white text-lg px-8 py-4 h-auto">
-              Learn More
             </Button>
           </div>
           
