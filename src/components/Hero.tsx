@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Eye, Target, Zap } from "lucide-react";
 
@@ -14,9 +15,9 @@ const Hero = () => {
           {/* Main headline */}
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 font-sans">
-              Zero Defects Are No Longer a Dream.
+              Every Defect Detected.
               <span className="block text-transparent bg-gradient-to-r from-symage-blue to-symage-pink bg-clip-text">
-                They're a Data Set.
+                Because Your AI Trained on Perfection.
               </span>
             </h1>
           </div>
