@@ -55,24 +55,30 @@ const Hero = () => {
             </Button>
           </div>
           
-          {/* Simplified features */}
+          {/* Enhanced features with bigger text and professional icons */}
           <div className="animate-fade-in grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
-            <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <Target className="h-8 w-8 mb-4 text-symage-blue" />
-              <h3 className="text-lg font-semibold mb-2">100% Accurate</h3>
-              <p className="text-gray-400 text-sm">Perfect labeling eliminates human error</p>
+            <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-symage-blue/20 rounded-xl mb-6 group-hover:bg-symage-blue/30 transition-colors duration-300">
+                <Target className="h-10 w-10 text-symage-blue" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-xl font-bold mb-3">100% Accurate</h3>
+              <p className="text-gray-300 text-base leading-relaxed">Perfect labeling eliminates human error</p>
             </div>
             
-            <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <Zap className="h-8 w-8 mb-4 text-symage-purple" />
-              <h3 className="text-lg font-semibold mb-2">10x Faster</h3>
-              <p className="text-gray-400 text-sm">Generate millions of images in days</p>
+            <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-symage-purple/20 rounded-xl mb-6 group-hover:bg-symage-purple/30 transition-colors duration-300">
+                <Zap className="h-10 w-10 text-symage-purple" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-xl font-bold mb-3">10x Faster</h3>
+              <p className="text-gray-300 text-base leading-relaxed">Generate millions of images in days</p>
             </div>
             
-            <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <Eye className="h-8 w-8 mb-4 text-symage-blue" />
-              <h3 className="text-lg font-semibold mb-2">Every Edge Case</h3>
-              <p className="text-gray-400 text-sm">Simulate any defect with precision</p>
+            <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-symage-blue/20 rounded-xl mb-6 group-hover:bg-symage-blue/30 transition-colors duration-300">
+                <Eye className="h-10 w-10 text-symage-blue" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Every Edge Case</h3>
+              <p className="text-gray-300 text-base leading-relaxed">Simulate any defect with precision</p>
             </div>
           </div>
         </div>
