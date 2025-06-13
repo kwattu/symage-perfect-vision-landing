@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto text-center text-white">
           {/* Four-line headline with pulsing text */}
           <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8 font-sans">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-16 font-sans">
               <span className="block">
                 Every Defect
               </span>
