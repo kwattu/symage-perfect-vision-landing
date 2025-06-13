@@ -1,40 +1,38 @@
 
-import { Car, Cpu, Heart, Package, Wrench, Coffee } from "lucide-react";
-
 const Industries = () => {
   const industries = [
     {
-      icon: Car,
+      image: "https://images.unsplash.com/photo-1493238792000-8113da705763?w=400&h=300&fit=crop",
       title: "Automotive & Aerospace",
       description: "Identifying surface imperfections, weld defects, and composite material flaws where safety and performance are non-negotiable.",
       color: "from-symage-blue to-symage-purple"
     },
     {
-      icon: Cpu,
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
       title: "Electronics & Semiconductor",
       description: "Detecting microscopic defects on PCBs, silicon wafers, and integrated circuits that are impossible for the human eye to see consistently.",
       color: "from-symage-purple to-symage-pink"
     },
     {
-      icon: Heart,
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
       title: "Medical Devices & Pharmaceuticals",
       description: "Ensuring the integrity of sterile packaging, verifying pill and capsule quality, and inspecting medical implants for life-or-death compliance.",
       color: "from-symage-pink to-symage-lime"
     },
     {
-      icon: Package,
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop",
       title: "Consumer Packaged Goods (CPG)",
       description: "Guaranteeing label placement, checking for packaging damage, and ensuring product consistency to protect brand image.",
       color: "from-symage-lime to-symage-blue"
     },
     {
-      icon: Wrench,
+      image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=300&fit=crop",
       title: "Plastics & Metals Manufacturing",
       description: "Finding molding flaws, surface scratches, color inconsistencies, and structural weaknesses in raw materials and finished goods.",
       color: "from-symage-purple to-symage-medium-gray"
     },
     {
-      icon: Coffee,
+      image: "https://images.unsplash.com/photo-1567306301408-9b74779a11af?w=400&h=300&fit=crop",
       title: "Food & Beverage",
       description: "Spotting foreign contaminants, verifying seal integrity, and ensuring quality standards to meet safety regulations and maintain consumer confidence.",
       color: "from-symage-lime to-symage-pink"
@@ -61,17 +59,24 @@ const Industries = () => {
             {industries.map((industry, index) => (
               <div 
                 key={industry.title}
-                className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300 hover:-translate-y-2 animate-scale-in"
+                className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300 hover:-translate-y-2 animate-scale-in"
                 style={{ 
                   animationDelay: `${index * 0.1}s`, 
                   animationFillMode: 'both' 
                 }}
               >
-                <div className="text-center">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${industry.color} rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <industry.icon className="h-8 w-8 text-white" />
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={industry.image} 
+                    alt={industry.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className={`absolute inset-0 bg-gradient-to-t ${industry.color} opacity-70`}></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-xl font-bold text-white mb-2 font-sans">{industry.title}</h3>
                   </div>
-                  <h3 className="text-xl font-bold text-symage-text-dark mb-4 font-sans">{industry.title}</h3>
+                </div>
+                <div className="p-6">
                   <p className="text-symage-medium-gray leading-relaxed">{industry.description}</p>
                 </div>
               </div>
