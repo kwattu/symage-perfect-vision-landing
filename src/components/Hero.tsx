@@ -20,23 +20,31 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Clean main headline */}
+          {/* Four-line headline with pulsing text */}
           <div className="animate-fade-in">
-            <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-8 font-sans">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8 font-sans">
               <span className="block">
-                Every Defect Detected.
+                Every Defect
               </span>
-              <span className="block text-transparent bg-gradient-to-r from-symage-blue to-symage-purple bg-clip-text">
-                Because Your AI Trained on Perfection.
+              <span className="block">
+                Detected.
+              </span>
+              <span className="block animate-pulse text-transparent bg-gradient-to-r from-symage-blue to-symage-purple bg-clip-text">
+                Because Your AI
+              </span>
+              <span className="block animate-pulse text-transparent bg-gradient-to-r from-symage-blue to-symage-purple bg-clip-text">
+                Trained on Perfection.
               </span>
             </h1>
           </div>
           
-          {/* Simplified subtitle */}
+          {/* Enhanced subtitle with more prominence */}
           <div className="animate-slide-in-left" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
-            <p className="text-xl md:text-2xl mb-16 text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Empower your visual AI with flawless, physics-based synthetic data to catch every anomaly, every time.
-            </p>
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 mb-16 border border-white/10">
+              <p className="text-2xl md:text-3xl font-semibold text-white max-w-4xl mx-auto leading-relaxed">
+                Empower your visual AI with flawless, physics-based synthetic data to catch every anomaly, every time.
+              </p>
+            </div>
           </div>
           
           {/* Clean CTA Button */}
