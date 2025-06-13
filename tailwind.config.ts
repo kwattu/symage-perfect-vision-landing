@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,7 +18,20 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+			},
 			colors: {
+				// Symage brand colors
+				'symage': {
+					'dark': '#1a1a1a',
+					'primary': '#3b82f6', // Blue
+					'secondary': '#10b981', // Green
+					'accent': '#f59e0b', // Orange/Yellow
+					'light-gray': '#f8fafc',
+					'medium-gray': '#64748b',
+					'text-dark': '#1e293b',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -72,8 +84,8 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'hero-gradient': 'linear-gradient(135deg, #1e40af 0%, #3730a3 50%, #581c87 100%)',
-				'section-gradient': 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
+				'symage-hero': 'linear-gradient(135deg, #1a1a1a 0%, #2d3748 50%, #1a1a1a 100%)',
+				'symage-section': 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
 			},
 			keyframes: {
 				'accordion-down': {
