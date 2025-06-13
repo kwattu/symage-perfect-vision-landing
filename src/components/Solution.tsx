@@ -34,7 +34,7 @@ const Solution = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-symage-text-dark mb-6 font-sans">
               Introducing Symage: From Flawed Data to 
-              <span className="text-transparent bg-gradient-to-r from-symage-primary to-symage-secondary bg-clip-text"> Flawless Detection</span>
+              <span className="text-transparent bg-gradient-to-r from-symage-blue to-symage-pink bg-clip-text"> Flawless Detection</span>
             </h2>
             <p className="text-xl text-symage-medium-gray max-w-4xl mx-auto leading-relaxed">
               Symage bridges the gap between the real world and the ideal data your AI needs. We generate photorealistic, pixel-perfect synthetic data, engineered for your exact products and inspection challenges.
@@ -44,7 +44,7 @@ const Solution = () => {
           {/* Main Value Prop */}
           <div className="bg-symage-light-gray rounded-3xl p-8 md:p-12 border border-gray-200 mb-16 animate-scale-in">
             <div className="text-center mb-8">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-symage-primary to-symage-secondary rounded-full mb-6">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-symage-purple to-symage-blue rounded-full mb-6">
                 <Target className="h-10 w-10 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-symage-text-dark mb-4 font-sans">Physics-Based Simulation Engine</h3>
@@ -71,7 +71,7 @@ const Solution = () => {
                 >
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-symage-primary to-symage-secondary rounded-lg group-hover:scale-110 transition-transform duration-300">
+                      <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-symage-purple to-symage-pink rounded-lg group-hover:scale-110 transition-transform duration-300">
                         <benefit.icon className="h-6 w-6 text-white" />
                       </div>
                     </div>
@@ -86,14 +86,14 @@ const Solution = () => {
           </div>
           
           {/* CTA Section */}
-          <div className="text-center bg-gradient-to-r from-symage-primary to-symage-secondary rounded-3xl p-8 md:p-12 text-white animate-fade-in">
+          <div className="text-center bg-gradient-to-r from-symage-purple to-symage-blue rounded-3xl p-8 md:p-12 text-white animate-fade-in">
             <h3 className="text-2xl md:text-3xl font-bold mb-4 font-sans">
               Ready to Transform Your Quality Control?
             </h3>
             <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
               Join leading manufacturers who have already revolutionized their defect detection with Symage's synthetic data.
             </p>
-            <Button size="lg" className="bg-white text-symage-primary hover:bg-gray-100 text-lg px-8 py-4 h-auto">
+            <Button size="lg" className="bg-white text-symage-purple hover:bg-gray-100 text-lg px-8 py-4 h-auto">
               Get Started Today
             </Button>
           </div>

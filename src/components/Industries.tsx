@@ -7,37 +7,37 @@ const Industries = () => {
       icon: Car,
       title: "Automotive & Aerospace",
       description: "Identifying surface imperfections, weld defects, and composite material flaws where safety and performance are non-negotiable.",
-      color: "from-symage-primary to-blue-600"
+      color: "from-symage-blue to-symage-purple"
     },
     {
       icon: Cpu,
       title: "Electronics & Semiconductor",
       description: "Detecting microscopic defects on PCBs, silicon wafers, and integrated circuits that are impossible for the human eye to see consistently.",
-      color: "from-purple-500 to-symage-primary"
+      color: "from-symage-purple to-symage-pink"
     },
     {
       icon: Heart,
       title: "Medical Devices & Pharmaceuticals",
       description: "Ensuring the integrity of sterile packaging, verifying pill and capsule quality, and inspecting medical implants for life-or-death compliance.",
-      color: "from-red-500 to-symage-accent"
+      color: "from-symage-pink to-symage-lime"
     },
     {
       icon: Package,
       title: "Consumer Packaged Goods (CPG)",
       description: "Guaranteeing label placement, checking for packaging damage, and ensuring product consistency to protect brand image.",
-      color: "from-symage-secondary to-green-600"
+      color: "from-symage-lime to-symage-blue"
     },
     {
       icon: Wrench,
       title: "Plastics & Metals Manufacturing",
       description: "Finding molding flaws, surface scratches, color inconsistencies, and structural weaknesses in raw materials and finished goods.",
-      color: "from-gray-500 to-symage-medium-gray"
+      color: "from-symage-purple to-symage-medium-gray"
     },
     {
       icon: Coffee,
       title: "Food & Beverage",
       description: "Spotting foreign contaminants, verifying seal integrity, and ensuring quality standards to meet safety regulations and maintain consumer confidence.",
-      color: "from-symage-accent to-yellow-600"
+      color: "from-symage-lime to-symage-pink"
     }
   ];
 
@@ -49,7 +49,7 @@ const Industries = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-symage-text-dark mb-6 font-sans">
               Powering Defect Detection 
-              <span className="text-transparent bg-gradient-to-r from-symage-primary to-symage-secondary bg-clip-text"> Across Industries</span>
+              <span className="text-transparent bg-gradient-to-r from-symage-blue to-symage-pink bg-clip-text"> Across Industries</span>
             </h2>
             <p className="text-xl text-symage-medium-gray max-w-4xl mx-auto">
               Automated visual inspection is critical wherever perfection is the standard. Symage provides the essential data for a wide range of applications.
@@ -86,7 +86,7 @@ const Industries = () => {
             <p className="text-lg text-symage-medium-gray mb-6 max-w-2xl mx-auto">
               Symage's physics-based simulation engine can be adapted to virtually any manufacturing or quality control scenario. Let's discuss your specific use case.
             </p>
-            <button className="text-symage-primary hover:text-symage-primary/80 font-semibold text-lg underline underline-offset-4 decoration-2 hover:decoration-symage-primary transition-colors">
+            <button className="text-symage-blue hover:text-symage-blue/80 font-semibold text-lg underline underline-offset-4 decoration-2 hover:decoration-symage-blue transition-colors">
               Contact Our Experts →
             </button>
           </div>

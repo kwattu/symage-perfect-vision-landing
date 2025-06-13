@@ -22,12 +22,13 @@ export default {
 				'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
 			},
 			colors: {
-				// Symage brand colors
+				// Symage brand colors with specific hex values
 				'symage': {
-					'dark': '#1a1a1a',
-					'primary': '#3b82f6', // Blue
-					'secondary': '#10b981', // Green
-					'accent': '#f59e0b', // Orange/Yellow
+					'dark': '#031431',
+					'purple': '#77489d',
+					'pink': '#f159b2',
+					'blue': '#56b2e5',
+					'lime': '#dcf448',
 					'light-gray': '#f8fafc',
 					'medium-gray': '#64748b',
 					'text-dark': '#1e293b',
@@ -84,7 +85,7 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'symage-hero': 'linear-gradient(135deg, #1a1a1a 0%, #2d3748 50%, #1a1a1a 100%)',
+				'symage-hero': 'linear-gradient(135deg, #031431 0%, #2d3748 50%, #031431 100%)',
 				'symage-section': 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
 			},
 			keyframes: {

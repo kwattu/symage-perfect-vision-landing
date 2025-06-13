@@ -15,19 +15,19 @@ const CTA = () => {
     <section className="py-20 bg-symage-dark relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-black/20"></div>
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-symage-primary/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-symage-secondary/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-symage-purple/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-symage-pink/10 rounded-full blur-3xl"></div>
       
       <div className="relative container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Main Headline */}
           <div className="animate-fade-in">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full mb-8">
-              <Gift className="h-10 w-10 text-symage-accent" />
+              <Gift className="h-10 w-10 text-symage-lime" />
             </div>
             <h2 className="text-4xl md:text-6xl font-bold mb-6 font-sans">
               Experience the Future of Quality Control.
-              <span className="block text-transparent bg-gradient-to-r from-symage-primary to-symage-secondary bg-clip-text">
+              <span className="block text-transparent bg-gradient-to-r from-symage-blue to-symage-pink bg-clip-text">
                 For Free.
               </span>
             </h2>
@@ -46,7 +46,7 @@ const CTA = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
               {offerPoints.map((point, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-symage-secondary flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-symage-lime flex-shrink-0" />
                   <span className="text-gray-300">{point}</span>
                 </div>
               ))}
@@ -55,7 +55,7 @@ const CTA = () => {
           
           {/* CTA Button */}
           <div className="animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
-            <Button size="lg" className="bg-symage-primary hover:bg-symage-primary/90 text-white text-xl px-12 py-6 h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+            <Button size="lg" className="bg-symage-blue hover:bg-symage-blue/90 text-white text-xl px-12 py-6 h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
               Claim My Free Proof-of-Concept Dataset
               <ArrowRight className="ml-3 h-6 w-6" />
             </Button>
