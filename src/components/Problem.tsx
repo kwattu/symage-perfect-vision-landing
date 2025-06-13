@@ -1,5 +1,5 @@
 
-import { AlertTriangle, TrendingDown, DollarSign, Zap } from "lucide-react";
+import { TrendingDown, DollarSign, Zap } from "lucide-react";
 
 const Problem = () => {
   return (
@@ -27,24 +27,36 @@ const Problem = () => {
           {/* Cleaner stats row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="text-center p-8 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 animate-slide-in-left">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-symage-purple/10 rounded-xl mb-6">
-                <AlertTriangle className="h-8 w-8 text-symage-purple" />
+              <div className="w-16 h-16 mx-auto mb-6 rounded-xl overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=400&fit=crop" 
+                  alt="Circuit board defect"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="text-4xl font-bold text-symage-purple mb-3 font-sans">30%</div>
               <p className="text-symage-medium-gray font-medium">Error rate in manual inspection</p>
             </div>
             
             <div className="text-center p-8 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 animate-scale-in" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-symage-blue/10 rounded-xl mb-6">
-                <DollarSign className="h-8 w-8 text-symage-blue" />
+              <div className="w-16 h-16 mx-auto mb-6 rounded-xl overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=400&fit=crop" 
+                  alt="Manufacturing monitoring"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="text-4xl font-bold text-symage-blue mb-3 font-sans">$1.3T</div>
               <p className="text-symage-medium-gray font-medium">Global annual losses to poor quality</p>
             </div>
             
             <div className="text-center p-8 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 animate-slide-in-left" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-symage-purple/10 rounded-xl mb-6">
-                <TrendingDown className="h-8 w-8 text-symage-purple" />
+              <div className="w-16 h-16 mx-auto mb-6 rounded-xl overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop" 
+                  alt="Quality control technology"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="text-4xl font-bold text-symage-purple mb-3 font-sans">30/100</div>
               <p className="text-symage-medium-gray font-medium">Potentially flawed products approved</p>
