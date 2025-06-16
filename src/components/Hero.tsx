@@ -18,67 +18,99 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="relative container mx-auto px-6 py-20 min-h-screen flex items-center">
-        <div className="max-w-5xl mx-auto text-center text-white">
-          {/* Four-line headline with pulsing text */}
-          <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-16 font-sans">
-              <span className="block">
-                Every Defect
-              </span>
-              <span className="block">
-                Detected.
-              </span>
-              <span className="block animate-pulse text-transparent bg-gradient-to-r from-symage-blue to-symage-purple bg-clip-text">
-                Because Your AI
-              </span>
-              <span className="block animate-pulse text-transparent bg-gradient-to-r from-symage-blue to-symage-purple bg-clip-text">
-                Trained on Perfection.
-              </span>
-            </h1>
-          </div>
-          
-          {/* Enhanced subtitle with more prominence */}
-          <div className="animate-slide-in-left" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 mb-16 border border-white/10">
-              <p className="text-2xl md:text-3xl font-semibold text-white max-w-4xl mx-auto leading-relaxed">
-                Empower your visual AI with flawless, physics-based synthetic data to catch every anomaly, every time.
-              </p>
-            </div>
-          </div>
-          
-          {/* Clean CTA Button */}
-          <div className="animate-scale-in flex justify-center mb-20" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
-            <Button size="lg" className="bg-symage-blue hover:bg-symage-blue/90 text-white text-xl px-12 py-6 h-auto rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <span>Claim Free Proof-of-Concept Dataset</span>
-              <ArrowRight className="ml-3 h-6 w-6" />
-            </Button>
-          </div>
-          
-          {/* Enhanced features with bigger text and professional icons */}
-          <div className="animate-fade-in grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
-            <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-symage-blue/20 rounded-xl mb-6 group-hover:bg-symage-blue/30 transition-colors duration-300">
-                <Target className="h-10 w-10 text-symage-blue" strokeWidth={1.5} />
-              </div>
-              <h3 className="text-xl font-bold mb-3">100% Accurate</h3>
-              <p className="text-gray-300 text-base leading-relaxed">Perfect labeling eliminates human error</p>
+      <div className="relative container mx-auto px-6 py-20 min-h-screen">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen">
+          {/* Left column - Content */}
+          <div className="text-white">
+            {/* Four-line headline with pulsing text */}
+            <div className="animate-fade-in">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-12 font-sans">
+                <span className="block">
+                  Every Defect
+                </span>
+                <span className="block">
+                  Detected.
+                </span>
+                <span className="block animate-pulse text-transparent bg-gradient-to-r from-symage-blue to-symage-purple bg-clip-text">
+                  Because Your AI
+                </span>
+                <span className="block animate-pulse text-transparent bg-gradient-to-r from-symage-blue to-symage-purple bg-clip-text">
+                  Trained on Perfection.
+                </span>
+              </h1>
             </div>
             
-            <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-symage-purple/20 rounded-xl mb-6 group-hover:bg-symage-purple/30 transition-colors duration-300">
-                <Zap className="h-10 w-10 text-symage-purple" strokeWidth={1.5} />
+            {/* Enhanced subtitle with more prominence */}
+            <div className="animate-slide-in-left" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 mb-12 border border-white/10">
+                <p className="text-xl md:text-2xl font-semibold text-white leading-relaxed">
+                  Empower your visual AI with flawless, physics-based synthetic data to catch every anomaly, every time.
+                </p>
               </div>
-              <h3 className="text-xl font-bold mb-3">10x Faster</h3>
-              <p className="text-gray-300 text-base leading-relaxed">Generate millions of images in days</p>
             </div>
             
-            <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-symage-blue/20 rounded-xl mb-6 group-hover:bg-symage-blue/30 transition-colors duration-300">
-                <Eye className="h-10 w-10 text-symage-blue" strokeWidth={1.5} />
+            {/* Clean CTA Button */}
+            <div className="animate-scale-in mb-16" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+              <Button size="lg" className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-10 py-5 h-auto rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <span>Claim Free Proof-of-Concept Dataset</span>
+                <ArrowRight className="ml-3 h-5 w-5" />
+              </Button>
+            </div>
+            
+            {/* Enhanced features with bigger text and professional icons */}
+            <div className="animate-fade-in grid grid-cols-1 md:grid-cols-3 gap-6" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
+              <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-blue/20 rounded-xl mb-4 group-hover:bg-symage-blue/30 transition-colors duration-300">
+                  <Target className="h-6 w-6 text-symage-blue" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold mb-2">100% Accurate</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">Perfect labeling eliminates human error</p>
               </div>
-              <h3 className="text-xl font-bold mb-3">Every Edge Case</h3>
-              <p className="text-gray-300 text-base leading-relaxed">Simulate any defect with precision</p>
+              
+              <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-purple/20 rounded-xl mb-4 group-hover:bg-symage-purple/30 transition-colors duration-300">
+                  <Zap className="h-6 w-6 text-symage-purple" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold mb-2">10x Faster</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">Generate millions of images in days</p>
+              </div>
+              
+              <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-blue/20 rounded-xl mb-4 group-hover:bg-symage-blue/30 transition-colors duration-300">
+                  <Eye className="h-6 w-6 text-symage-blue" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold mb-2">Every Edge Case</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">Simulate any defect with precision</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Right column - Hero Image */}
+          <div className="relative animate-scale-in" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+            <div className="relative group">
+              {/* Main image container with elegant border and shadow */}
+              <div className="relative rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl">
+                <img 
+                  src="/lovable-uploads/11f745e5-558a-4b39-883f-b1d279f56e3a.png" 
+                  alt="AI-powered defect detection in manufacturing showing automated inspection system identifying surface scratches on metal components"
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                {/* Subtle gradient overlay for depth */}
+                <div className="absolute inset-0 bg-gradient-to-t from-symage-dark/20 via-transparent to-transparent"></div>
+              </div>
+              
+              {/* Floating accent elements */}
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-symage-blue rounded-full blur-sm opacity-60 animate-pulse"></div>
+              <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-symage-purple/30 rounded-full blur-md opacity-40"></div>
+              
+              {/* Elegant caption */}
+              <div className="absolute bottom-4 left-4 right-4">
+                <div className="bg-black/60 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/10">
+                  <p className="text-white text-sm font-medium">
+                    Real-time defect detection powered by synthetic training data
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
