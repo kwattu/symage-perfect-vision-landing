@@ -40,13 +40,11 @@ const Hero = () => {
               </h1>
             </div>
             
-            {/* Enhanced subtitle with more prominence */}
-            <div className="animate-slide-in-left" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 mb-12 border border-white/10">
-                <p className="text-xl md:text-2xl font-semibold text-white leading-relaxed">
-                  Empower your visual AI with flawless, physics-based synthetic data to catch every anomaly, every time.
-                </p>
-              </div>
+            {/* Enhanced subtitle without border */}
+            <div className="animate-slide-in-left mb-12" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+              <p className="text-xl md:text-2xl font-semibold text-white leading-relaxed">
+                Empower your visual AI with flawless, physics-based synthetic data to catch every anomaly, every time.
+              </p>
             </div>
             
             {/* Clean CTA Button */}
