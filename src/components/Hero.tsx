@@ -26,16 +26,16 @@ const Hero = () => {
             <div className="animate-fade-in">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-12 font-sans">
                 <span className="block">
-                  Every Defect
+                  No Defect
                 </span>
                 <span className="block">
-                  Detected.
+                  Left Behind.
                 </span>
                 <span className="block animate-pulse text-transparent bg-gradient-to-r from-symage-blue to-symage-purple bg-clip-text">
-                  Because Your AI
+                  Because Your Model
                 </span>
                 <span className="block animate-pulse text-transparent bg-gradient-to-r from-symage-blue to-symage-purple bg-clip-text">
-                  Trained on Perfection.
+                  Trained on Every One.
                 </span>
               </h1>
             </div>
