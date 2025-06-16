@@ -83,8 +83,8 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Right column - Hero Image */}
-          <div className="relative animate-scale-in" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+          {/* Right column - Hero Image - moved up by 2 inches */}
+          <div className="relative animate-scale-in -mt-16" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
             <div className="relative group">
               {/* Main image container with elegant border and shadow */}
               <div className="relative rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl">
