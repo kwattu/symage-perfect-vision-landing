@@ -10,8 +10,8 @@ const Hero = () => {
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-symage-purple/5 rounded-full blur-3xl"></div>
       
-      {/* Badge moved to upper left corner */}
-      <div className="absolute top-8 left-8 animate-fade-in">
+      {/* Badge moved to upper right corner */}
+      <div className="absolute top-8 right-8 animate-fade-in">
         <div className="inline-flex items-center px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
           <Sparkles className="h-4 w-4 mr-2 text-symage-blue" />
           <span className="text-sm font-medium text-white">Revolutionary AI Training Data</span>
@@ -22,8 +22,8 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start min-h-screen">
           {/* Left column - Content */}
           <div className="text-white">
-            {/* Four-line headline with pulsing text */}
-            <div className="animate-fade-in">
+            {/* Four-line headline with pulsing text - pushed down by 2" */}
+            <div className="animate-fade-in mt-32">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-12 font-sans">
                 <span className="block">
                   No Defect
@@ -40,15 +40,15 @@ const Hero = () => {
               </h1>
             </div>
             
-            {/* Enhanced subtitle without border */}
-            <div className="animate-slide-in-left mb-12" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+            {/* Enhanced subtitle with 1" spacing above and below */}
+            <div className="animate-slide-in-left my-16 py-4" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
               <p className="text-xl md:text-2xl font-semibold text-white leading-relaxed">
                 Empower your visual AI with flawless, physics-based synthetic data to catch every anomaly, every time.
               </p>
             </div>
             
-            {/* Clean CTA Button */}
-            <div className="animate-scale-in mb-16" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+            {/* Clean CTA Button with 1" spacing after */}
+            <div className="animate-scale-in mb-16 pb-4" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
               <Button size="lg" className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-10 py-5 h-auto rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <span>Claim Free Proof-of-Concept Dataset</span>
                 <ArrowRight className="ml-3 h-5 w-5" />
