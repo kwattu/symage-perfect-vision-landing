@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
       
       <div className="relative container mx-auto px-6 py-20 min-h-screen">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start min-h-screen">
           {/* Left column - Content */}
           <div className="text-white">
             {/* Four-line headline with pulsing text */}
@@ -83,8 +83,8 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Right column - Hero Image - moved up by 2 inches */}
-          <div className="relative animate-scale-in -mt-16" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+          {/* Right column - Hero Image - aligned with "Left Behind" text */}
+          <div className="relative animate-scale-in mt-20 lg:mt-24" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
             <div className="relative group">
               {/* Main image container with elegant border and shadow */}
               <div className="relative rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl">
