@@ -10,20 +10,12 @@ const Hero = () => {
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-symage-purple/5 rounded-full blur-3xl"></div>
       
-      {/* Badge moved to upper right corner */}
-      <div className="absolute top-8 right-8 animate-fade-in">
-        <div className="inline-flex items-center px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
-          <Sparkles className="h-4 w-4 mr-2 text-symage-blue" />
-          <span className="text-sm font-medium text-white">Revolutionary AI Training Data</span>
-        </div>
-      </div>
-      
       <div className="relative container mx-auto px-6 py-20 min-h-screen">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start min-h-screen">
           {/* Left column - Content */}
           <div className="text-white">
-            {/* Four-line headline with pulsing text - moved up 1.5" */}
-            <div className="animate-fade-in mt-20">
+            {/* Four-line headline with pulsing text - moved up by 1" */}
+            <div className="animate-fade-in mt-12">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-12 font-sans">
                 <span className="block">
                   No Defect
@@ -32,7 +24,7 @@ const Hero = () => {
                   Left Behind.
                 </span>
                 <span className="block animate-pulse text-transparent bg-gradient-to-r from-symage-blue to-symage-purple bg-clip-text">
-                  Because Your Model
+                  Because Your AI
                 </span>
                 <span className="block animate-pulse text-transparent bg-gradient-to-r from-symage-blue to-symage-purple bg-clip-text">
                   Trained on Every One.
@@ -40,37 +32,45 @@ const Hero = () => {
               </h1>
             </div>
             
-            {/* Updated subtitle with new text and 1" spacing above and below */}
-            <div className="animate-slide-in-left my-16 py-4" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+            {/* Updated subtitle spanning full width margin to margin */}
+            <div className="animate-slide-in-left my-16 py-4 -mx-6 px-6" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
               <p className="text-xl md:text-2xl font-semibold text-white leading-relaxed">
                 Stop letting data bottlenecks undermine your quality control. Generate thousands of perfectly labeled, photorealistic defect examples on demand. Build computer vision models that catch more, faster.
               </p>
             </div>
             
-            {/* Enhanced features with bigger text and professional icons - moved above CTA button */}
-            <div className="animate-fade-in grid grid-cols-1 md:grid-cols-3 gap-6 mb-12" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
-              <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-blue/20 rounded-xl mb-4 group-hover:bg-symage-blue/30 transition-colors duration-300">
-                  <Target className="h-6 w-6 text-symage-blue" strokeWidth={1.5} />
+            {/* Enhanced features - wider, shorter boxes spanning full width */}
+            <div className="animate-fade-in -mx-6 px-6 mb-12" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300 flex items-center space-x-4">
+                  <div className="inline-flex items-center justify-center w-10 h-10 bg-symage-blue/20 rounded-xl group-hover:bg-symage-blue/30 transition-colors duration-300 flex-shrink-0">
+                    <Target className="h-5 w-5 text-symage-blue" strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold mb-1">100% Accurate</h3>
+                    <p className="text-gray-300 text-xs leading-relaxed">Perfect labeling eliminates human error</p>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold mb-2">100% Accurate</h3>
-                <p className="text-gray-300 text-sm leading-relaxed">Perfect labeling eliminates human error</p>
-              </div>
-              
-              <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-purple/20 rounded-xl mb-4 group-hover:bg-symage-purple/30 transition-colors duration-300">
-                  <Zap className="h-6 w-6 text-symage-purple" strokeWidth={1.5} />
+                
+                <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300 flex items-center space-x-4">
+                  <div className="inline-flex items-center justify-center w-10 h-10 bg-symage-purple/20 rounded-xl mb-4 group-hover:bg-symage-purple/30 transition-colors duration-300 flex-shrink-0">
+                    <Zap className="h-5 w-5 text-symage-purple" strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold mb-1">10x Faster</h3>
+                    <p className="text-gray-300 text-xs leading-relaxed">Generate millions of images in days</p>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold mb-2">10x Faster</h3>
-                <p className="text-gray-300 text-sm leading-relaxed">Generate millions of images in days</p>
-              </div>
-              
-              <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-blue/20 rounded-xl mb-4 group-hover:bg-symage-blue/30 transition-colors duration-300">
-                  <Eye className="h-6 w-6 text-symage-blue" strokeWidth={1.5} />
+                
+                <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300 flex items-center space-x-4">
+                  <div className="inline-flex items-center justify-center w-10 h-10 bg-symage-blue/20 rounded-xl mb-4 group-hover:bg-symage-blue/30 transition-colors duration-300 flex-shrink-0">
+                    <Eye className="h-5 w-5 text-symage-blue" strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold mb-1">Every Edge Case</h3>
+                    <p className="text-gray-300 text-xs leading-relaxed">Simulate any defect with precision</p>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold mb-2">Every Edge Case</h3>
-                <p className="text-gray-300 text-sm leading-relaxed">Simulate any defect with precision</p>
               </div>
             </div>
             
@@ -83,8 +83,16 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Right column - Hero Image - aligned with "Left Behind" text */}
-          <div className="relative animate-scale-in mt-16 lg:mt-20" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+          {/* Right column - Hero Image - moved up by 1" */}
+          <div className="relative animate-scale-in mt-8 lg:mt-12" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+            {/* Badge positioned to align with right edge of image */}
+            <div className="absolute -top-16 right-0 animate-fade-in">
+              <div className="inline-flex items-center px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
+                <Sparkles className="h-4 w-4 mr-2 text-symage-blue" />
+                <span className="text-sm font-medium text-white">Revolutionary AI Training Data</span>
+              </div>
+            </div>
+            
             <div className="relative group">
               {/* Main image container with elegant border and shadow */}
               <div className="relative rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl">
