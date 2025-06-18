@@ -14,8 +14,8 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start min-h-screen">
           {/* Left column - Content */}
           <div className="text-white">
-            {/* Four-line headline with pulsing text - moved up by 1" */}
-            <div className="animate-fade-in mt-12">
+            {/* Four-line headline with pulsing text - moved up by 2.5" total */}
+            <div className="animate-fade-in -mt-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-12 font-sans">
                 <span className="block">
                   No Defect
@@ -39,42 +39,7 @@ const Hero = () => {
               </p>
             </div>
             
-            {/* Enhanced features - wider, shorter boxes spanning full width */}
-            <div className="animate-fade-in -mx-6 px-6 mb-12" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300 flex items-center space-x-4">
-                  <div className="inline-flex items-center justify-center w-10 h-10 bg-symage-blue/20 rounded-xl group-hover:bg-symage-blue/30 transition-colors duration-300 flex-shrink-0">
-                    <Target className="h-5 w-5 text-symage-blue" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold mb-1">100% Accurate</h3>
-                    <p className="text-gray-300 text-xs leading-relaxed">Perfect labeling eliminates human error</p>
-                  </div>
-                </div>
-                
-                <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300 flex items-center space-x-4">
-                  <div className="inline-flex items-center justify-center w-10 h-10 bg-symage-purple/20 rounded-xl mb-4 group-hover:bg-symage-purple/30 transition-colors duration-300 flex-shrink-0">
-                    <Zap className="h-5 w-5 text-symage-purple" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold mb-1">10x Faster</h3>
-                    <p className="text-gray-300 text-xs leading-relaxed">Generate millions of images in days</p>
-                  </div>
-                </div>
-                
-                <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300 flex items-center space-x-4">
-                  <div className="inline-flex items-center justify-center w-10 h-10 bg-symage-blue/20 rounded-xl mb-4 group-hover:bg-symage-blue/30 transition-colors duration-300 flex-shrink-0">
-                    <Eye className="h-5 w-5 text-symage-blue" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold mb-1">Every Edge Case</h3>
-                    <p className="text-gray-300 text-xs leading-relaxed">Simulate any defect with precision</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Clean CTA Button - moved below feature boxes but still above fold */}
+            {/* Clean CTA Button - moved up and above feature boxes */}
             <div className="animate-scale-in mb-16 pb-4" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
               <Button size="lg" className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-10 py-5 h-auto rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <span>Claim Free Proof-of-Concept Dataset</span>
@@ -84,7 +49,7 @@ const Hero = () => {
           </div>
           
           {/* Right column - Hero Image - moved up by 1" */}
-          <div className="relative animate-scale-in mt-8 lg:mt-12" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+          <div className="relative animate-scale-in -mt-4 lg:-mt-4" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
             {/* Badge positioned to align with right edge of image */}
             <div className="absolute -top-16 right-0 animate-fade-in">
               <div className="inline-flex items-center px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
@@ -115,6 +80,41 @@ const Hero = () => {
                   <p className="text-white text-sm font-medium">
                     Real-time defect detection powered by synthetic training data
                   </p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Enhanced features - moved under the image, wider, shorter boxes spanning full width */}
+            <div className="animate-fade-in mt-8 -mx-6 px-6" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300 flex items-center space-x-4">
+                  <div className="inline-flex items-center justify-center w-10 h-10 bg-symage-blue/20 rounded-xl group-hover:bg-symage-blue/30 transition-colors duration-300 flex-shrink-0">
+                    <Target className="h-5 w-5 text-symage-blue" strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold mb-1">100% Accurate</h3>
+                    <p className="text-gray-300 text-xs leading-relaxed">Perfect labeling eliminates human error</p>
+                  </div>
+                </div>
+                
+                <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300 flex items-center space-x-4">
+                  <div className="inline-flex items-center justify-center w-10 h-10 bg-symage-purple/20 rounded-xl group-hover:bg-symage-purple/30 transition-colors duration-300 flex-shrink-0">
+                    <Zap className="h-5 w-5 text-symage-purple" strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold mb-1">10x Faster</h3>
+                    <p className="text-gray-300 text-xs leading-relaxed">Generate millions of images in days</p>
+                  </div>
+                </div>
+                
+                <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300 flex items-center space-x-4">
+                  <div className="inline-flex items-center justify-center w-10 h-10 bg-symage-blue/20 rounded-xl group-hover:bg-symage-blue/30 transition-colors duration-300 flex-shrink-0">
+                    <Eye className="h-5 w-5 text-symage-blue" strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold mb-1">Every Edge Case</h3>
+                    <p className="text-gray-300 text-xs leading-relaxed">Simulate any defect with precision</p>
+                  </div>
                 </div>
               </div>
             </div>
