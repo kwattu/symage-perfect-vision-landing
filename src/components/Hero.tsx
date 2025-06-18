@@ -22,8 +22,8 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start min-h-screen">
           {/* Left column - Content */}
           <div className="text-white">
-            {/* Four-line headline with pulsing text - pushed down by 2" */}
-            <div className="animate-fade-in mt-32">
+            {/* Four-line headline with pulsing text - moved up 1.5" */}
+            <div className="animate-fade-in mt-20">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-12 font-sans">
                 <span className="block">
                   No Defect
@@ -40,23 +40,15 @@ const Hero = () => {
               </h1>
             </div>
             
-            {/* Enhanced subtitle with 1" spacing above and below */}
+            {/* Updated subtitle with new text and 1" spacing above and below */}
             <div className="animate-slide-in-left my-16 py-4" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
               <p className="text-xl md:text-2xl font-semibold text-white leading-relaxed">
-                Empower your visual AI with flawless, physics-based synthetic data to catch every anomaly, every time.
+                Stop letting data bottlenecks undermine your quality control. Generate thousands of perfectly labeled, photorealistic defect examples on demand. Build computer vision models that catch more, faster.
               </p>
             </div>
             
-            {/* Clean CTA Button with 1" spacing after */}
-            <div className="animate-scale-in mb-16 pb-4" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
-              <Button size="lg" className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-10 py-5 h-auto rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <span>Claim Free Proof-of-Concept Dataset</span>
-                <ArrowRight className="ml-3 h-5 w-5" />
-              </Button>
-            </div>
-            
-            {/* Enhanced features with bigger text and professional icons */}
-            <div className="animate-fade-in grid grid-cols-1 md:grid-cols-3 gap-6" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
+            {/* Enhanced features with bigger text and professional icons - moved above CTA button */}
+            <div className="animate-fade-in grid grid-cols-1 md:grid-cols-3 gap-6 mb-12" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
               <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-blue/20 rounded-xl mb-4 group-hover:bg-symage-blue/30 transition-colors duration-300">
                   <Target className="h-6 w-6 text-symage-blue" strokeWidth={1.5} />
@@ -81,10 +73,18 @@ const Hero = () => {
                 <p className="text-gray-300 text-sm leading-relaxed">Simulate any defect with precision</p>
               </div>
             </div>
+            
+            {/* Clean CTA Button - moved below feature boxes but still above fold */}
+            <div className="animate-scale-in mb-16 pb-4" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+              <Button size="lg" className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-10 py-5 h-auto rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <span>Claim Free Proof-of-Concept Dataset</span>
+                <ArrowRight className="ml-3 h-5 w-5" />
+              </Button>
+            </div>
           </div>
           
           {/* Right column - Hero Image - aligned with "Left Behind" text */}
-          <div className="relative animate-scale-in mt-20 lg:mt-24" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+          <div className="relative animate-scale-in mt-16 lg:mt-20" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
             <div className="relative group">
               {/* Main image container with elegant border and shadow */}
               <div className="relative rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl">
