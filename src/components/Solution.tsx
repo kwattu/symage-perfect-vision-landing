@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Zap, Target, BarChart3, Lightbulb, Clock, DollarSign, Search, RefreshCw } from "lucide-react";
+import { CheckCircle, Zap, Target, BarChart3, Lightbulb, Clock, DollarSign, Search, RefreshCw, ArrowDown } from "lucide-react";
 
 const Solution = () => {
   const benefits = [
@@ -12,7 +12,7 @@ const Solution = () => {
     {
       icon: Target,
       title: "CRUSH FALSE POSITIVES",
-      description: "Train your AI on every conceivable variation of lighting, angle, material texture, and shadow, teaching it what's a real defect vs. what's just noise."
+      description: "Train your AI on every conceivable variation of lighting, angle, material texture, and shadow, teaching it what's a real defect vs. what's noise."
     },
     {
       icon: DollarSign,
@@ -51,20 +51,20 @@ const Solution = () => {
 
   return (
     <section className="py-24 bg-white relative overflow-hidden">
-      {/* Elegant background elements */}
+      {/* Subtle background elements - no gradients */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-symage-blue/3 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/6 w-72 h-72 bg-symage-purple/4 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-slate-50 rounded-full blur-3xl opacity-30"></div>
+        <div className="absolute bottom-1/3 right-1/6 w-72 h-72 bg-slate-100 rounded-full blur-3xl opacity-20"></div>
       </div>
 
       <div className="relative container mx-auto px-8">
         <div className="max-w-7xl mx-auto">
           {/* Main Header */}
           <div className="text-center mb-20 animate-fade-in">
-            <div className="inline-flex items-center justify-center w-16 h-1 bg-gradient-to-r from-symage-purple to-symage-blue rounded-full mb-8"></div>
+            <div className="w-1 h-16 bg-symage-purple mx-auto mb-8"></div>
             <h2 className="text-5xl md:text-6xl font-light text-slate-900 mb-8 font-sans leading-tight tracking-tight">
               The Solution: 
-              <span className="block font-semibold bg-gradient-to-r from-symage-purple to-symage-blue bg-clip-text text-transparent">
+              <span className="block font-medium text-symage-purple mt-2">
                 Data You Control, Not Just Collect
               </span>
             </h2>
@@ -73,112 +73,147 @@ const Solution = () => {
                 Synthetic data is the breakthrough your quality program needs. We create a digital twin of your product and its manufacturing environment. From there, we can generate a virtually infinite library of computer-generated, 100% accurate training data.
               </p>
               <p className="text-lg text-slate-700 leading-relaxed">
-                It's not just "fake" data. It's a <span className="font-semibold text-symage-purple">photorealistic simulation of your reality</span>, giving you complete control to create the exact scenarios your AI needs to learn from—without ever stopping your production line.
+                It's not just "fake" data. It's a <span className="font-medium text-symage-purple">photorealistic simulation of your reality</span>, giving you complete control to create the exact scenarios your AI needs to learn from—without ever stopping your production line.
               </p>
             </div>
           </div>
 
           {/* From Data Scarcity to Defect Mastery */}
-          <div className="mb-24">
+          <div className="mb-20">
             <div className="text-center mb-16">
               <h3 className="text-4xl md:text-5xl font-light text-slate-900 mb-4 font-sans">
                 From Data Scarcity to 
-                <span className="block font-semibold bg-gradient-to-r from-symage-purple to-symage-blue bg-clip-text text-transparent">
+                <span className="block font-medium text-symage-purple mt-2">
                   Defect Mastery
                 </span>
               </h3>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {benefits.slice(0, 3).map((benefit, index) => (
                 <div 
                   key={benefit.title}
-                  className="group bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white/20 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 animate-slide-in-left"
+                  className="group bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300 animate-slide-in-left"
                   style={{ 
                     animationDelay: `${index * 0.1}s`, 
                     animationFillMode: 'both' 
                   }}
                 >
                   <div className="text-center">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-symage-purple/10 to-symage-blue/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                      <benefit.icon className="h-8 w-8 text-symage-purple" strokeWidth={1.5} />
+                    <div className="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-slate-100 transition-colors duration-300">
+                      <benefit.icon className="h-6 w-6 text-symage-purple" strokeWidth={1.5} />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-4 tracking-wide">{benefit.title}</h4>
-                    <p className="text-slate-600 leading-relaxed font-light">{benefit.description}</p>
+                    <h4 className="text-sm font-bold text-slate-900 mb-4 tracking-wider uppercase">{benefit.title}</h4>
+                    <p className="text-slate-600 leading-relaxed font-light text-sm">{benefit.description}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
               {benefits.slice(3).map((benefit, index) => (
                 <div 
                   key={benefit.title}
-                  className="group bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white/20 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 animate-slide-in-left"
+                  className="group bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300 animate-slide-in-left"
                   style={{ 
                     animationDelay: `${(index + 3) * 0.1}s`, 
                     animationFillMode: 'both' 
                   }}
                 >
                   <div className="text-center">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-symage-purple/10 to-symage-blue/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                      <benefit.icon className="h-8 w-8 text-symage-purple" strokeWidth={1.5} />
+                    <div className="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-slate-100 transition-colors duration-300">
+                      <benefit.icon className="h-6 w-6 text-symage-purple" strokeWidth={1.5} />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-4 tracking-wide">{benefit.title}</h4>
-                    <p className="text-slate-600 leading-relaxed font-light">{benefit.description}</p>
+                    <h4 className="text-sm font-bold text-slate-900 mb-4 tracking-wider uppercase">{benefit.title}</h4>
+                    <p className="text-slate-600 leading-relaxed font-light text-sm">{benefit.description}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Tell Us What You Need */}
+          {/* Subtle Mid-Page CTA */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-4 bg-slate-50 rounded-full px-6 py-3 border border-slate-200">
+              <span className="text-sm text-slate-600">Ready to see the difference?</span>
+              <Button size="sm" className="bg-symage-purple hover:bg-symage-purple/90 text-white text-xs px-4 py-2 h-auto rounded-full">
+                Get Started
+              </Button>
+            </div>
+            <div className="flex justify-center mt-4">
+              <ArrowDown className="h-4 w-4 text-slate-400 animate-bounce" />
+            </div>
+          </div>
+
+          {/* Tell Us What You Need - Process Flow Chart */}
           <div className="mb-20">
             <div className="text-center mb-16">
               <h3 className="text-4xl md:text-5xl font-light text-slate-900 mb-4 font-sans">
                 Tell Us What You Need.
-                <span className="block font-semibold bg-gradient-to-r from-symage-purple to-symage-blue bg-clip-text text-transparent">
+                <span className="block font-medium text-symage-purple mt-2">
                   We'll Handle the Rest.
                 </span>
               </h3>
             </div>
 
-            <div className="space-y-8">
-              {processSteps.map((step, index) => (
-                <div 
-                  key={step.number}
-                  className="group flex items-start space-x-8 p-8 bg-white/60 backdrop-blur-sm rounded-3xl border border-white/30 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 animate-fade-in"
-                  style={{ 
-                    animationDelay: `${index * 0.2}s`, 
-                    animationFillMode: 'both' 
-                  }}
-                >
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-symage-purple to-symage-blue flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition-transform duration-300">
-                      {step.number}
+            {/* Process Flow Chart */}
+            <div className="max-w-6xl mx-auto">
+              <div className="relative">
+                {/* Connection Lines */}
+                <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-px bg-slate-200 -translate-y-1/2"></div>
+                
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 relative">
+                  {processSteps.map((step, index) => (
+                    <div 
+                      key={step.number}
+                      className="relative animate-fade-in"
+                      style={{ 
+                        animationDelay: `${index * 0.2}s`, 
+                        animationFillMode: 'both' 
+                      }}
+                    >
+                      {/* Step Circle */}
+                      <div className="flex flex-col items-center text-center">
+                        <div className="relative mb-6">
+                          <div className="w-20 h-20 bg-white border-4 border-symage-purple rounded-full flex items-center justify-center shadow-sm">
+                            <span className="text-xl font-bold text-symage-purple">{step.number}</span>
+                          </div>
+                          {/* Connector dot for mobile */}
+                          {index < processSteps.length - 1 && (
+                            <div className="lg:hidden absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-slate-300 rounded-full"></div>
+                          )}
+                        </div>
+                        
+                        <div className="max-w-xs">
+                          <h4 className="text-xl font-semibold text-slate-900 mb-4 font-sans">{step.title}</h4>
+                          <p className="text-sm text-slate-600 leading-relaxed font-light">{step.description}</p>
+                        </div>
+                      </div>
+                      
+                      {/* Mobile connector line */}
+                      {index < processSteps.length - 1 && (
+                        <div className="lg:hidden flex justify-center mt-6 mb-2">
+                          <div className="w-px h-8 bg-slate-200"></div>
+                        </div>
+                      )}
                     </div>
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="text-2xl font-bold text-slate-900 mb-4 font-sans">{step.title}</h4>
-                    <p className="text-lg text-slate-600 leading-relaxed font-light">{step.description}</p>
-                  </div>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
           </div>
 
-          {/* CTA Section */}
+          {/* Final CTA Section */}
           <div className="text-center">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-symage-purple/5 via-symage-blue/5 to-symage-purple/5 rounded-3xl blur-xl"></div>
-              <div className="relative bg-gradient-to-r from-symage-purple to-symage-blue rounded-3xl p-12 text-white animate-scale-in">
-                <h3 className="text-3xl md:text-4xl font-bold mb-6 font-sans">
+            <div className="relative max-w-4xl mx-auto">
+              <div className="bg-symage-dark rounded-3xl p-12 text-white animate-scale-in">
+                <h3 className="text-3xl md:text-4xl font-light mb-6 font-sans">
                   Ready to Transform Your Quality Control?
                 </h3>
-                <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto leading-relaxed">
+                <p className="text-xl mb-8 text-slate-300 max-w-2xl mx-auto leading-relaxed font-light">
                   Join leading manufacturers who have revolutionized their defect detection with synthetic data.
                 </p>
-                <Button size="lg" className="bg-white text-symage-purple hover:bg-gray-100 text-lg px-8 py-4 h-auto font-semibold">
+                <Button size="lg" className="bg-white text-symage-dark hover:bg-slate-100 text-lg px-8 py-4 h-auto font-medium rounded-xl">
                   Get Started Today
                 </Button>
               </div>
