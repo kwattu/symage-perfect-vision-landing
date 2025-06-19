@@ -40,16 +40,16 @@ const Industries = () => {
   ];
 
   return (
-    <section className="py-20 bg-symage-light-gray">
+    <section className="py-20 bg-symage-dark">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-symage-text-dark mb-6 font-sans">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-sans">
               Powering Defect Detection 
-              <span className="text-symage-text-dark"> Across Industries</span>
+              <span className="text-white"> Across Industries</span>
             </h2>
-            <p className="text-xl text-symage-medium-gray max-w-4xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto">
               Automated visual inspection is critical wherever perfection is the standard. Symage provides the essential data for a wide range of applications.
             </p>
           </div>
@@ -59,7 +59,7 @@ const Industries = () => {
             {industries.map((industry, index) => (
               <div 
                 key={industry.title}
-                className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300 hover:-translate-y-2 animate-scale-in"
+                className="group bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2 animate-scale-in"
                 style={{ 
                   animationDelay: `${index * 0.1}s`, 
                   animationFillMode: 'both' 
@@ -77,18 +77,18 @@ const Industries = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-symage-medium-gray leading-relaxed">{industry.description}</p>
+                  <p className="text-gray-300 leading-relaxed">{industry.description}</p>
                 </div>
               </div>
             ))}
           </div>
           
-          {/* Bottom CTA - Reduced size and removed box outline */}
+          {/* Bottom CTA */}
           <div className="mt-16 text-center animate-fade-in">
-            <h3 className="text-xl md:text-2xl font-bold text-symage-text-dark mb-3 font-sans">
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-3 font-sans">
               Your Industry Not Listed?
             </h3>
-            <p className="text-base text-symage-medium-gray mb-4 max-w-xl mx-auto">
+            <p className="text-base text-gray-300 mb-4 max-w-xl mx-auto">
               Symage's physics-based simulation engine can be adapted to virtually any manufacturing or quality control scenario.
             </p>
             <button className="text-symage-blue hover:text-symage-blue/80 font-semibold text-base underline underline-offset-4 decoration-2 hover:decoration-symage-blue transition-colors">
