@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle, Gift } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 
 const CTA = () => {
   const offerPoints = [
@@ -22,12 +22,9 @@ const CTA = () => {
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Main Headline */}
           <div className="animate-fade-in">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full mb-8">
-              <Gift className="h-10 w-10 text-symage-lime" />
-            </div>
             <h2 className="text-4xl md:text-6xl font-bold mb-6 font-sans">
               Experience the Future of Quality Control.
-              <span className="block text-transparent bg-gradient-to-r from-symage-blue to-symage-pink bg-clip-text">
+              <span className="block text-symage-blue">
                 For Free.
               </span>
             </h2>

@@ -64,7 +64,7 @@ const Solution = () => {
             <div className="w-1 h-16 bg-symage-purple mx-auto mb-8"></div>
             <h2 className="text-5xl md:text-6xl font-light text-slate-900 mb-8 font-sans leading-tight tracking-tight">
               The Solution: 
-              <span className="block font-medium text-symage-purple mt-2">
+              <span className="block font-medium text-slate-900 mt-2">
                 Data You Control, Not Just Collect
               </span>
             </h2>
@@ -83,7 +83,7 @@ const Solution = () => {
             <div className="text-center mb-16">
               <h3 className="text-4xl md:text-5xl font-light text-slate-900 mb-4 font-sans">
                 From Data Scarcity to 
-                <span className="block font-medium text-symage-purple mt-2">
+                <span className="block font-medium text-slate-900 mt-2">
                   Defect Mastery
                 </span>
               </h3>
@@ -93,19 +93,17 @@ const Solution = () => {
               {benefits.slice(0, 3).map((benefit, index) => (
                 <div 
                   key={benefit.title}
-                  className="group bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300 animate-slide-in-left"
+                  className="group bg-symage-dark rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300 animate-slide-in-left text-center text-white"
                   style={{ 
                     animationDelay: `${index * 0.1}s`, 
                     animationFillMode: 'both' 
                   }}
                 >
-                  <div className="text-center">
-                    <div className="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-slate-100 transition-colors duration-300">
-                      <benefit.icon className="h-6 w-6 text-symage-purple" strokeWidth={1.5} />
-                    </div>
-                    <h4 className="text-sm font-bold text-slate-900 mb-4 tracking-wider uppercase">{benefit.title}</h4>
-                    <p className="text-slate-600 leading-relaxed font-light text-sm">{benefit.description}</p>
+                  <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-white/20 transition-colors duration-300">
+                    <benefit.icon className="h-6 w-6 text-white" strokeWidth={1.5} />
                   </div>
+                  <h4 className="text-sm font-bold text-white mb-4 tracking-wider uppercase">{benefit.title}</h4>
+                  <p className="text-white/80 leading-relaxed font-light text-sm">{benefit.description}</p>
                 </div>
               ))}
             </div>
@@ -114,30 +112,38 @@ const Solution = () => {
               {benefits.slice(3).map((benefit, index) => (
                 <div 
                   key={benefit.title}
-                  className="group bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300 animate-slide-in-left"
+                  className="group bg-symage-dark rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300 animate-slide-in-left text-center text-white"
                   style={{ 
                     animationDelay: `${(index + 3) * 0.1}s`, 
                     animationFillMode: 'both' 
                   }}
                 >
-                  <div className="text-center">
-                    <div className="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-slate-100 transition-colors duration-300">
-                      <benefit.icon className="h-6 w-6 text-symage-purple" strokeWidth={1.5} />
-                    </div>
-                    <h4 className="text-sm font-bold text-slate-900 mb-4 tracking-wider uppercase">{benefit.title}</h4>
-                    <p className="text-slate-600 leading-relaxed font-light text-sm">{benefit.description}</p>
+                  <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-white/20 transition-colors duration-300">
+                    <benefit.icon className="h-6 w-6 text-white" strokeWidth={1.5} />
                   </div>
+                  <h4 className="text-sm font-bold text-white mb-4 tracking-wider uppercase">{benefit.title}</h4>
+                  <p className="text-white/80 leading-relaxed font-light text-sm">{benefit.description}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Tell Us What You Need - Process Flow Chart */}
-          <div className="mb-20">
+          {/* Small CTA */}
+          <div className="text-center mb-20">
+            <Button size="sm" className="bg-symage-dark text-white hover:bg-slate-800 text-sm px-6 py-2 h-auto font-medium rounded-lg">
+              Ready to Transform Your Quality Control?
+            </Button>
+            <div className="flex justify-center mt-4">
+              <ArrowDown className="h-5 w-5 text-slate-400 animate-bounce" />
+            </div>
+          </div>
+
+          {/* Tell Us What You Need - Process Flow Chart with different background */}
+          <div className="bg-slate-50 rounded-3xl p-12 mb-20">
             <div className="text-center mb-16">
               <h3 className="text-4xl md:text-5xl font-light text-slate-900 mb-4 font-sans">
                 Tell Us What You Need.
-                <span className="block font-medium text-symage-purple mt-2">
+                <span className="block font-medium text-slate-900 mt-2">
                   We'll Handle the Rest.
                 </span>
               </h3>
@@ -186,23 +192,6 @@ const Solution = () => {
                     </div>
                   ))}
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Final CTA Section - Moved from mid-page */}
-          <div className="text-center">
-            <div className="relative max-w-4xl mx-auto">
-              <div className="bg-symage-dark rounded-3xl p-12 text-white animate-scale-in">
-                <h3 className="text-3xl md:text-4xl font-light mb-6 font-sans">
-                  Ready to Transform Your Quality Control?
-                </h3>
-                <p className="text-xl mb-8 text-slate-300 max-w-2xl mx-auto leading-relaxed font-light">
-                  Join leading manufacturers who have revolutionized their defect detection with synthetic data.
-                </p>
-                <Button size="lg" className="bg-symage-dark text-white hover:bg-slate-800 text-lg px-8 py-4 h-auto font-medium rounded-xl border border-slate-600">
-                  Get Started Today
-                </Button>
               </div>
             </div>
           </div>

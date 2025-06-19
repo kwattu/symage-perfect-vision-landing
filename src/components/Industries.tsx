@@ -47,7 +47,7 @@ const Industries = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-symage-text-dark mb-6 font-sans">
               Powering Defect Detection 
-              <span className="text-symage-purple"> Across Industries</span>
+              <span className="text-symage-text-dark"> Across Industries</span>
             </h2>
             <p className="text-xl text-symage-medium-gray max-w-4xl mx-auto">
               Automated visual inspection is critical wherever perfection is the standard. Symage provides the essential data for a wide range of applications.
@@ -71,7 +71,7 @@ const Industries = () => {
                     alt={industry.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-symage-dark/60"></div>
+                  <div className="absolute inset-0 bg-symage-dark/40"></div>
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-xl font-bold text-white mb-2 font-sans">{industry.title}</h3>
                   </div>
@@ -83,15 +83,15 @@ const Industries = () => {
             ))}
           </div>
           
-          {/* Bottom CTA */}
-          <div className="mt-16 text-center bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-200 animate-fade-in">
-            <h3 className="text-2xl md:text-3xl font-bold text-symage-text-dark mb-4 font-sans">
+          {/* Bottom CTA - Reduced size and removed box outline */}
+          <div className="mt-16 text-center animate-fade-in">
+            <h3 className="text-xl md:text-2xl font-bold text-symage-text-dark mb-3 font-sans">
               Your Industry Not Listed?
             </h3>
-            <p className="text-lg text-symage-medium-gray mb-6 max-w-2xl mx-auto">
-              Symage's physics-based simulation engine can be adapted to virtually any manufacturing or quality control scenario. Let's discuss your specific use case.
+            <p className="text-base text-symage-medium-gray mb-4 max-w-xl mx-auto">
+              Symage's physics-based simulation engine can be adapted to virtually any manufacturing or quality control scenario.
             </p>
-            <button className="text-symage-blue hover:text-symage-blue/80 font-semibold text-lg underline underline-offset-4 decoration-2 hover:decoration-symage-blue transition-colors">
+            <button className="text-symage-blue hover:text-symage-blue/80 font-semibold text-base underline underline-offset-4 decoration-2 hover:decoration-symage-blue transition-colors">
               Contact Our Experts →
             </button>
           </div>
