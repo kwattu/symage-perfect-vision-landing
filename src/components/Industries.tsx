@@ -47,7 +47,7 @@ const Industries = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-symage-text-dark mb-6 font-sans">
               Powering Defect Detection 
-              <span className="text-transparent bg-gradient-to-r from-symage-blue to-symage-pink bg-clip-text"> Across Industries</span>
+              <span className="text-symage-purple"> Across Industries</span>
             </h2>
             <p className="text-xl text-symage-medium-gray max-w-4xl mx-auto">
               Automated visual inspection is critical wherever perfection is the standard. Symage provides the essential data for a wide range of applications.
@@ -71,7 +71,7 @@ const Industries = () => {
                     alt={industry.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${industry.duotone}`}></div>
+                  <div className="absolute inset-0 bg-symage-dark/60"></div>
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-xl font-bold text-white mb-2 font-sans">{industry.title}</h3>
                   </div>

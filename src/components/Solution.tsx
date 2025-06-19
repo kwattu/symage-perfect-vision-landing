@@ -33,17 +33,17 @@ const Solution = () => {
 
   const processSteps = [
     {
-      number: "01",
+      number: "1",
       title: "Model Your Reality",
       description: "We work with you to create a high-fidelity 3D model of your product and its specific defect types (e.g., scratches, dents, misprints, contamination)."
     },
     {
-      number: "02", 
+      number: "2", 
       title: "Generate & Diversify",
       description: "We automatically generate thousands of synthetic images, randomizing variables like lighting, camera position, and defect severity. Every image is perfectly and automatically labeled."
     },
     {
-      number: "03",
+      number: "3",
       title: "Train & Deploy", 
       description: "Integrate your new, robust dataset into your existing AI platform (or use ours) and deploy a more intelligent, accurate inspection model."
     }
@@ -132,19 +132,6 @@ const Solution = () => {
             </div>
           </div>
 
-          {/* Subtle Mid-Page CTA */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-4 bg-slate-50 rounded-full px-6 py-3 border border-slate-200">
-              <span className="text-sm text-slate-600">Ready to see the difference?</span>
-              <Button size="sm" className="bg-symage-purple hover:bg-symage-purple/90 text-white text-xs px-4 py-2 h-auto rounded-full">
-                Get Started
-              </Button>
-            </div>
-            <div className="flex justify-center mt-4">
-              <ArrowDown className="h-4 w-4 text-slate-400 animate-bounce" />
-            </div>
-          </div>
-
           {/* Tell Us What You Need - Process Flow Chart */}
           <div className="mb-20">
             <div className="text-center mb-16">
@@ -175,8 +162,8 @@ const Solution = () => {
                       {/* Step Circle */}
                       <div className="flex flex-col items-center text-center">
                         <div className="relative mb-6">
-                          <div className="w-20 h-20 bg-white border-4 border-symage-purple rounded-full flex items-center justify-center shadow-sm">
-                            <span className="text-xl font-bold text-symage-purple">{step.number}</span>
+                          <div className="w-20 h-20 bg-symage-purple rounded-full flex items-center justify-center shadow-sm">
+                            <span className="text-2xl font-bold text-white">{step.number}</span>
                           </div>
                           {/* Connector dot for mobile */}
                           {index < processSteps.length - 1 && (
@@ -203,7 +190,7 @@ const Solution = () => {
             </div>
           </div>
 
-          {/* Final CTA Section */}
+          {/* Final CTA Section - Moved from mid-page */}
           <div className="text-center">
             <div className="relative max-w-4xl mx-auto">
               <div className="bg-symage-dark rounded-3xl p-12 text-white animate-scale-in">
@@ -213,7 +200,7 @@ const Solution = () => {
                 <p className="text-xl mb-8 text-slate-300 max-w-2xl mx-auto leading-relaxed font-light">
                   Join leading manufacturers who have revolutionized their defect detection with synthetic data.
                 </p>
-                <Button size="lg" className="bg-white text-symage-dark hover:bg-slate-100 text-lg px-8 py-4 h-auto font-medium rounded-xl">
+                <Button size="lg" className="bg-symage-dark text-white hover:bg-slate-800 text-lg px-8 py-4 h-auto font-medium rounded-xl border border-slate-600">
                   Get Started Today
                 </Button>
               </div>
