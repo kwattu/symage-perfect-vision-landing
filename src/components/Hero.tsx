@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Eye, Target, Zap, Bug } from "lucide-react";
+import { ArrowRight, Eye, Target, Zap } from "lucide-react";
 
 const Hero = () => {
   const scrollToCTA = () => {
@@ -16,17 +16,6 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-symage-purple/5 rounded-full blur-3xl"></div>
-      
-      {/* Bug notification */}
-      <div className="absolute top-8 right-8 z-10 animate-fade-in">
-        <button 
-          onClick={scrollToCTA}
-          className="group flex items-center space-x-3 bg-symage-blue/90 hover:bg-symage-blue text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-        >
-          <Bug className="h-5 w-5 text-white" />
-          <span className="text-sm font-medium">Check out our Proof of Concept Offer!</span>
-        </button>
-      </div>
       
       <div className="relative container mx-auto px-6 py-20 min-h-screen">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start min-h-screen">

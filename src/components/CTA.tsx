@@ -58,14 +58,9 @@ const CTA = () => {
             </Button>
           </div>
           
-          {/* Trust Indicators */}
+          {/* Trust Indicators - simplified */}
           <div className="mt-12 animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
-            <p className="text-gray-400 text-sm mb-4">Trusted by leading manufacturers worldwide</p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-8 text-gray-400 text-sm">
-              <span>✓ No credit card required</span>
-              <span>✓ Setup in under 24 hours</span>
-              <span>✓ Full technical support included</span>
-            </div>
+            <p className="text-gray-300 text-lg font-medium">Trusted by leading manufacturers</p>
           </div>
         </div>
       </div>
