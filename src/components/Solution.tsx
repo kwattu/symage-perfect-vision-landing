@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 const Solution = () => {
   const scrollToCTA = () => {
@@ -100,35 +100,45 @@ const Solution = () => {
             </Button>
           </div>
           
-          {/* Process Steps - moved to bottom */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Process Steps with Nested Arrows */}
+          <div className="relative max-w-5xl mx-auto">
             {processSteps.map((step, index) => (
               <div 
                 key={step.number}
-                className="relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 animate-scale-in"
+                className="relative mb-8 last:mb-0 animate-scale-in"
                 style={{ 
                   animationDelay: `${index * 0.2}s`, 
                   animationFillMode: 'both' 
                 }}
               >
-                {/* Step Number Circle */}
-                <div className="w-16 h-16 bg-symage-blue rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <span className="text-2xl font-bold text-white">{step.number}</span>
-                </div>
-                
-                <h3 className="text-xl font-bold text-white mb-4 text-center font-sans">
-                  {step.title}
-                </h3>
-                <p className="text-gray-300 leading-relaxed text-center">
-                  {step.description}
-                </p>
-                
-                {/* Connection Arrow (hidden on last item) */}
-                {index < processSteps.length - 1 && (
-                  <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <ArrowRight className="h-8 w-8 text-symage-blue/50" />
+                {/* Arrow Shape */}
+                <div 
+                  className="relative bg-gradient-to-r from-symage-blue to-symage-purple p-8 md:p-12"
+                  style={{
+                    clipPath: index === processSteps.length - 1 
+                      ? 'polygon(0 0, calc(100% - 40px) 0, 100% 50%, calc(100% - 40px) 100%, 0 100%, 40px 50%)'
+                      : 'polygon(0 0, calc(100% - 80px) 0, 100% 50%, calc(100% - 80px) 100%, 0 100%, 40px 50%)',
+                    marginLeft: `${index * 40}px`,
+                    marginRight: index === processSteps.length - 1 ? '0px' : `${(processSteps.length - 1 - index) * 40}px`
+                  }}
+                >
+                  <div className="flex items-center gap-6">
+                    {/* Step Number */}
+                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-2xl font-bold text-symage-dark">{step.number}</span>
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="flex-1 pr-8">
+                      <h3 className="text-2xl font-bold text-white mb-3 font-sans">
+                        {step.title}
+                      </h3>
+                      <p className="text-white/90 leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
                   </div>
-                )}
+                </div>
               </div>
             ))}
           </div>
