@@ -46,8 +46,8 @@ const Hero = () => {
               </p>
             </div>
             
-            {/* Clean CTA Button */}
-            <div className="animate-scale-in mb-16 pb-4" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+            {/* Clean CTA Button - removed bottom margin */}
+            <div className="animate-scale-in" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
               <Button size="lg" className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-10 py-5 h-auto rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <span>Claim Free Proof-of-Concept Dataset</span>
                 <ArrowRight className="ml-3 h-5 w-5" />

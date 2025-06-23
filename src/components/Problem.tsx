@@ -3,7 +3,7 @@ import { AlertTriangle, Clock, Database, Eye, TrendingDown, X } from "lucide-rea
 
 const Problem = () => {
   return (
-    <section className="py-24 bg-symage-dark relative overflow-hidden">
+    <section className="py-16 bg-symage-dark relative overflow-hidden">
       {/* Elegant background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/6 w-72 h-72 bg-symage-purple/10 rounded-full blur-3xl"></div>
@@ -98,19 +98,14 @@ const Problem = () => {
             </div>
           </div>
           
-          {/* Elegant conclusion statement */}
+          {/* Elegant conclusion statement - removed box styling */}
           <div className="text-center animate-fade-in">
             <div className="max-w-4xl mx-auto">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-symage-purple/10 via-symage-blue/10 to-symage-purple/10 rounded-3xl blur-xl"></div>
-                <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-12">
-                  <div className="w-20 h-1 bg-gradient-to-r from-symage-purple to-symage-blue mx-auto mb-8 rounded-full"></div>
-                  <p className="text-xl text-gray-300 leading-relaxed font-light">
-                    Traditional data collection isn't just inefficient; it's a 
-                    <span className="font-semibold bg-gradient-to-r from-symage-purple to-symage-blue bg-clip-text text-transparent"> barrier to achieving true quality control</span>.
-                  </p>
-                </div>
-              </div>
+              <div className="w-20 h-1 bg-gradient-to-r from-symage-purple to-symage-blue mx-auto mb-8 rounded-full"></div>
+              <p className="text-xl text-white leading-relaxed font-light">
+                Traditional data collection isn't just inefficient; it's a 
+                <span className="font-semibold"> barrier to achieving true quality control</span>.
+              </p>
             </div>
           </div>
         </div>

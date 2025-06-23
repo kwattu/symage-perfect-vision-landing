@@ -47,52 +47,8 @@ const Solution = () => {
             </p>
           </div>
           
-          {/* Process Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            {processSteps.map((step, index) => (
-              <div 
-                key={step.number}
-                className="relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 animate-scale-in"
-                style={{ 
-                  animationDelay: `${index * 0.2}s`, 
-                  animationFillMode: 'both' 
-                }}
-              >
-                {/* Step Number Circle */}
-                <div className="w-16 h-16 bg-symage-blue rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <span className="text-2xl font-bold text-white">{step.number}</span>
-                </div>
-                
-                <h3 className="text-xl font-bold text-white mb-4 text-center font-sans">
-                  {step.title}
-                </h3>
-                <p className="text-gray-300 leading-relaxed text-center">
-                  {step.description}
-                </p>
-                
-                {/* Connection Arrow (hidden on last item) */}
-                {index < processSteps.length - 1 && (
-                  <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <ArrowRight className="h-8 w-8 text-symage-blue/50" />
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-          
-          {/* Mid-page CTA */}
-          <div className="text-center mb-20 animate-fade-in">
-            <Button 
-              onClick={scrollToCTA}
-              className="bg-symage-dark hover:bg-symage-dark/90 text-white border border-symage-blue px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Ready to transform your quality control?
-              <ChevronDown className="ml-2 h-4 w-4" />
-            </Button>
-          </div>
-          
-          {/* Value Propositions */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Value Propositions - moved to top */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {[
               {
                 title: "Perfect Labeling, Every Time",
@@ -129,6 +85,50 @@ const Solution = () => {
               >
                 <h3 className="text-xl font-bold text-white mb-4 font-sans">{item.title}</h3>
                 <p className="text-gray-300 leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
+          
+          {/* Mid-page CTA */}
+          <div className="text-center mb-20 animate-fade-in">
+            <Button 
+              onClick={scrollToCTA}
+              className="bg-symage-dark hover:bg-symage-dark/90 text-white border border-symage-blue px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              Ready to transform your quality control?
+              <ChevronDown className="ml-2 h-4 w-4" />
+            </Button>
+          </div>
+          
+          {/* Process Steps - moved to bottom */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {processSteps.map((step, index) => (
+              <div 
+                key={step.number}
+                className="relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 animate-scale-in"
+                style={{ 
+                  animationDelay: `${index * 0.2}s`, 
+                  animationFillMode: 'both' 
+                }}
+              >
+                {/* Step Number Circle */}
+                <div className="w-16 h-16 bg-symage-blue rounded-full flex items-center justify-center mb-6 mx-auto">
+                  <span className="text-2xl font-bold text-white">{step.number}</span>
+                </div>
+                
+                <h3 className="text-xl font-bold text-white mb-4 text-center font-sans">
+                  {step.title}
+                </h3>
+                <p className="text-gray-300 leading-relaxed text-center">
+                  {step.description}
+                </p>
+                
+                {/* Connection Arrow (hidden on last item) */}
+                {index < processSteps.length - 1 && (
+                  <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+                    <ArrowRight className="h-8 w-8 text-symage-blue/50" />
+                  </div>
+                )}
               </div>
             ))}
           </div>
