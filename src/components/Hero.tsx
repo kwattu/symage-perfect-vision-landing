@@ -42,7 +42,7 @@ const Hero = () => {
             {/* Updated subtitle spanning full width margin to margin */}
             <div className="animate-slide-in-left my-16 py-4 -mx-6 px-6" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
               <p className="text-xl md:text-2xl font-semibold text-white leading-relaxed">
-                Stop letting data bottlenecks undermine your quality control. Generate thousands of perfectly labeled, photorealistic defect examples on demand. Build computer vision models that catch more, faster.
+                Stop letting data bottlenecks undermine your quality control. Generate thousands of perfectly labeled, photorealistic defect examples on demand. Build computer vision models that catch more defects, faster.
               </p>
             </div>
             
