@@ -31,9 +31,8 @@ const SolutionIntro = () => {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 bg-symage-dark relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-black/10"></div>
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-symage-purple/5 rounded-full blur-3xl"></div>
       
@@ -73,7 +72,7 @@ const SolutionIntro = () => {
                   <div className="w-16 h-16 bg-symage-pink/20 rounded-xl flex items-center justify-center mb-6">
                     <benefit.icon className="h-8 w-8 text-symage-pink" strokeWidth={1.5} />
                   </div>
-                  <h4 className="text-xl font-bold text-symage-blue mb-4 font-sans">
+                  <h4 className="text-xl font-bold text-symage-dark mb-4 font-sans">
                     {benefit.title}
                   </h4>
                   <p className="text-symage-dark leading-relaxed">
@@ -97,7 +96,7 @@ const SolutionIntro = () => {
                   <div className="w-16 h-16 bg-symage-pink/20 rounded-xl flex items-center justify-center mb-6">
                     <benefit.icon className="h-8 w-8 text-symage-pink" strokeWidth={1.5} />
                   </div>
-                  <h4 className="text-xl font-bold text-symage-blue mb-4 font-sans">
+                  <h4 className="text-xl font-bold text-symage-dark mb-4 font-sans">
                     {benefit.title}
                   </h4>
                   <p className="text-symage-dark leading-relaxed">

@@ -28,15 +28,14 @@ const Solution = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 bg-symage-dark relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-black/10"></div>
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-symage-purple/5 rounded-full blur-3xl"></div>
       
       <div className="relative container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Process Steps with more muted arrow colors */}
+          {/* Process Steps with gradient arrows from deep purple to light blue to pink */}
           <div className="relative max-w-5xl mx-auto mb-24">
             {processSteps.map((step, index) => (
               <div 
@@ -47,11 +46,11 @@ const Solution = () => {
                   animationFillMode: 'both' 
                 }}
               >
-                {/* Arrow Shape with muted colors */}
+                {/* Arrow Shape with gradient from deep purple to light blue to pink */}
                 <div 
                   className="relative p-8 md:p-12"
                   style={{
-                    background: index === 0 ? '#4a5b7a' : index === 1 ? '#6b4d6b' : '#4a7a9a',
+                    background: `linear-gradient(45deg, #77489d, #56b2e5, #f159b2)`,
                     clipPath: index === processSteps.length - 1 
                       ? 'polygon(0 0, calc(100% - 40px) 0, 100% 50%, calc(100% - 40px) 100%, 0 100%, 40px 50%)'
                       : 'polygon(0 0, calc(100% - 80px) 0, 100% 50%, calc(100% - 80px) 100%, 0 100%, 40px 50%)',
@@ -80,6 +79,9 @@ const Solution = () => {
             ))}
           </div>
           
+          {/* Added space after arrows */}
+          <div className="mb-16"></div>
+          
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-sans">
@@ -92,12 +94,12 @@ const Solution = () => {
           
           {/* Mid-page heading instead of button */}
           <div className="text-center mb-12 animate-fade-in">
-            <h3 className="text-2xl md:text-3xl font-bold text-symage-blue mb-4 font-sans">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-sans">
               Ready to Transform Your Quality Control?
             </h3>
           </div>
           
-          {/* Value Propositions */}
+          {/* Value Propositions - white background with deep blue text and pink subheads */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -127,14 +129,14 @@ const Solution = () => {
             ].map((item, index) => (
               <div 
                 key={item.title}
-                className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-symage-blue hover:bg-white/10 transition-all duration-300 animate-scale-in"
+                className="bg-white backdrop-blur-sm rounded-2xl p-6 border border-symage-blue hover:bg-gray-50 transition-all duration-300 animate-scale-in"
                 style={{ 
                   animationDelay: `${index * 0.1}s`, 
                   animationFillMode: 'both' 
                 }}
               >
-                <h3 className="text-xl font-bold text-symage-blue mb-4 font-sans">{item.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{item.description}</p>
+                <h3 className="text-xl font-bold text-symage-pink mb-4 font-sans">{item.title}</h3>
+                <p className="text-symage-dark leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>

@@ -12,9 +12,8 @@ const CTA = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden" data-cta-section>
+    <section className="py-20 bg-symage-dark relative overflow-hidden" data-cta-section>
       {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-black/20"></div>
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-symage-purple/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-symage-pink/10 rounded-full blur-3xl"></div>
       
@@ -37,7 +36,7 @@ const CTA = () => {
             </p>
           </div>
           
-          {/* Offer Details - white background with pink checkmarks */}
+          {/* Offer Details - white background with pink checkmarks and deep blue text */}
           <div className="bg-white rounded-3xl p-8 md:p-12 border border-gray-200 mb-12 animate-scale-in" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
             <h3 className="text-2xl font-bold mb-8 font-sans text-symage-dark">What You'll Get:</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
@@ -58,7 +57,7 @@ const CTA = () => {
             </Button>
           </div>
           
-          {/* Trust Indicators - added period */}
+          {/* Trust Indicators */}
           <div className="animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
             <p className="text-gray-300 text-lg font-medium">Trusted by leading manufacturers.</p>
           </div>

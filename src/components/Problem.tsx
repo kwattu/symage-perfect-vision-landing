@@ -35,7 +35,7 @@ const Problem = () => {
                     <Eye className="h-8 w-8 text-symage-pink" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-symage-blue mb-4 tracking-wide">RARE DEFECTS, BIG PROBLEMS</h4>
+                    <h4 className="text-lg font-semibold text-symage-dark mb-4 tracking-wide">RARE DEFECTS, BIG PROBLEMS</h4>
                     <p className="text-symage-dark leading-relaxed font-light">You struggle to collect enough images of those rare but critical defects, leaving your AI models partially blind.</p>
                   </div>
                 </div>
@@ -47,7 +47,7 @@ const Problem = () => {
                     <X className="h-8 w-8 text-symage-pink" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-symage-blue mb-4 tracking-wide">FALSE POSITIVES HALT PRODUCTION</h4>
+                    <h4 className="text-lg font-semibold text-symage-dark mb-4 tracking-wide">FALSE POSITIVES HALT PRODUCTION</h4>
                     <p className="text-symage-dark leading-relaxed font-light">Your current system cries wolf, stopping the line for acceptable variations in lighting, texture, or reflection, costing time and money.</p>
                   </div>
                 </div>
@@ -62,7 +62,7 @@ const Problem = () => {
                     <TrendingDown className="h-8 w-8 text-symage-pink" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-symage-blue mb-4 tracking-wide">THE "COLD START" PROBLEM</h4>
+                    <h4 className="text-lg font-semibold text-symage-dark mb-4 tracking-wide">THE "COLD START" PROBLEM</h4>
                     <p className="text-symage-dark leading-relaxed font-light">Launching a new product or line means starting the painful, slow, and expensive data collection process all over again.</p>
                   </div>
                 </div>
@@ -74,7 +74,7 @@ const Problem = () => {
                     <Clock className="h-8 w-8 text-symage-pink" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-symage-blue mb-4 tracking-wide">EXPENSIVE, SLOW LABELING</h4>
+                    <h4 className="text-lg font-semibold text-symage-dark mb-4 tracking-wide">EXPENSIVE, SLOW LABELING</h4>
                     <p className="text-symage-dark leading-relaxed font-light">Manual data collection and annotation is a drain on resources, budget, and is prone to human error and inconsistency.</p>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const Problem = () => {
                     <AlertTriangle className="h-8 w-8 text-symage-pink" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-symage-blue mb-4 tracking-wide">UNSEEN FLAWS SLIP THROUGH</h4>
+                    <h4 className="text-lg font-semibold text-symage-dark mb-4 tracking-wide">UNSEEN FLAWS SLIP THROUGH</h4>
                     <p className="text-symage-dark leading-relaxed font-light">You can't train a model to find a defect it has never seen.</p>
                   </div>
                 </div>
