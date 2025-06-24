@@ -1,4 +1,3 @@
-
 import { ChevronDown } from "lucide-react";
 
 const Solution = () => {
@@ -87,8 +86,8 @@ const Solution = () => {
             ))}
           </div>
           
-          {/* Mid-page heading with consistent spacing */}
-          <div className="text-center animate-fade-in mb-16">
+          {/* Mid-page heading with additional space */}
+          <div className="text-center animate-fade-in mb-16" style={{ marginTop: '144px' }}>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-sans">
               Ready to Transform Your Quality Control?
             </h2>
