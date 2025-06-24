@@ -87,8 +87,8 @@ const Solution = () => {
             ))}
           </div>
           
-          {/* Mid-page heading with 2" of space and matching section heading style */}
-          <div className="text-center mb-16 animate-fade-in" style={{ marginTop: '144px' }}>
+          {/* Mid-page heading with 1" before and 1" after */}
+          <div className="text-center animate-fade-in" style={{ marginTop: '72px', marginBottom: '72px' }}>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-sans">
               Ready to Transform Your Quality Control?
             </h2>
