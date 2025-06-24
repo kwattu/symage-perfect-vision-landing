@@ -1,5 +1,3 @@
-
-import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 
 const Solution = () => {
@@ -29,7 +27,7 @@ const Solution = () => {
   ];
 
   return (
-    <section className="py-20 bg-symage-dark relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
@@ -37,6 +35,49 @@ const Solution = () => {
       
       <div className="relative container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
+          {/* Process Steps with Nested Arrows */}
+          <div className="relative max-w-5xl mx-auto mb-16">
+            {processSteps.map((step, index) => (
+              <div 
+                key={step.number}
+                className="relative mb-8 last:mb-0 animate-scale-in"
+                style={{ 
+                  animationDelay: `${index * 0.2}s`, 
+                  animationFillMode: 'both' 
+                }}
+              >
+                {/* Arrow Shape with less vibrant colors */}
+                <div 
+                  className="relative bg-gradient-to-r from-blue-600 to-purple-600 p-8 md:p-12"
+                  style={{
+                    clipPath: index === processSteps.length - 1 
+                      ? 'polygon(0 0, calc(100% - 40px) 0, 100% 50%, calc(100% - 40px) 100%, 0 100%, 40px 50%)'
+                      : 'polygon(0 0, calc(100% - 80px) 0, 100% 50%, calc(100% - 80px) 100%, 0 100%, 40px 50%)',
+                    marginLeft: `${index * 40}px`,
+                    marginRight: index === processSteps.length - 1 ? '0px' : `${(processSteps.length - 1 - index) * 40}px`
+                  }}
+                >
+                  <div className="flex items-center gap-6">
+                    {/* Step Number */}
+                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-2xl font-bold text-symage-dark">{step.number}</span>
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="flex-1 pr-8">
+                      <h3 className="text-2xl font-bold text-white mb-3 font-sans">
+                        {step.title}
+                      </h3>
+                      <p className="text-white/90 leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-sans">
@@ -47,8 +88,15 @@ const Solution = () => {
             </p>
           </div>
           
-          {/* Value Propositions - moved to top */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {/* Mid-page heading instead of button */}
+          <div className="text-center mb-12 animate-fade-in">
+            <h3 className="text-2xl md:text-3xl font-bold text-symage-blue mb-4 font-sans">
+              Ready to Transform Your Quality Control?
+            </h3>
+          </div>
+          
+          {/* Value Propositions */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 title: "Perfect Labeling, Every Time",
@@ -77,68 +125,14 @@ const Solution = () => {
             ].map((item, index) => (
               <div 
                 key={item.title}
-                className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 animate-scale-in"
+                className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-symage-blue hover:bg-white/10 transition-all duration-300 animate-scale-in"
                 style={{ 
                   animationDelay: `${index * 0.1}s`, 
                   animationFillMode: 'both' 
                 }}
               >
-                <h3 className="text-xl font-bold text-white mb-4 font-sans">{item.title}</h3>
+                <h3 className="text-xl font-bold text-symage-blue mb-4 font-sans">{item.title}</h3>
                 <p className="text-gray-300 leading-relaxed">{item.description}</p>
-              </div>
-            ))}
-          </div>
-          
-          {/* Mid-page CTA */}
-          <div className="text-center mb-20 animate-fade-in">
-            <Button 
-              onClick={scrollToCTA}
-              className="bg-symage-dark hover:bg-symage-dark/90 text-white border border-symage-blue px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Ready to transform your quality control?
-              <ChevronDown className="ml-2 h-4 w-4" />
-            </Button>
-          </div>
-          
-          {/* Process Steps with Nested Arrows */}
-          <div className="relative max-w-5xl mx-auto">
-            {processSteps.map((step, index) => (
-              <div 
-                key={step.number}
-                className="relative mb-8 last:mb-0 animate-scale-in"
-                style={{ 
-                  animationDelay: `${index * 0.2}s`, 
-                  animationFillMode: 'both' 
-                }}
-              >
-                {/* Arrow Shape */}
-                <div 
-                  className="relative bg-gradient-to-r from-symage-blue to-symage-purple p-8 md:p-12"
-                  style={{
-                    clipPath: index === processSteps.length - 1 
-                      ? 'polygon(0 0, calc(100% - 40px) 0, 100% 50%, calc(100% - 40px) 100%, 0 100%, 40px 50%)'
-                      : 'polygon(0 0, calc(100% - 80px) 0, 100% 50%, calc(100% - 80px) 100%, 0 100%, 40px 50%)',
-                    marginLeft: `${index * 40}px`,
-                    marginRight: index === processSteps.length - 1 ? '0px' : `${(processSteps.length - 1 - index) * 40}px`
-                  }}
-                >
-                  <div className="flex items-center gap-6">
-                    {/* Step Number */}
-                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-2xl font-bold text-symage-dark">{step.number}</span>
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="flex-1 pr-8">
-                      <h3 className="text-2xl font-bold text-white mb-3 font-sans">
-                        {step.title}
-                      </h3>
-                      <p className="text-white/90 leading-relaxed">
-                        {step.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
             ))}
           </div>

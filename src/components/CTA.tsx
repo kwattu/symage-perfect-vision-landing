@@ -12,7 +12,7 @@ const CTA = () => {
   ];
 
   return (
-    <section className="py-20 bg-symage-dark relative overflow-hidden" data-cta-section>
+    <section className="py-20 relative overflow-hidden" data-cta-section>
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-symage-purple/10 rounded-full blur-3xl"></div>
@@ -50,8 +50,8 @@ const CTA = () => {
             </div>
           </div>
           
-          {/* CTA Button */}
-          <div className="animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
+          {/* CTA Button with reduced bottom margin */}
+          <div className="animate-fade-in mb-6" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
             <Button size="lg" className="bg-symage-blue hover:bg-symage-blue/90 text-white text-xl px-12 py-6 h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
               Claim My Free Proof-of-Concept Dataset
               <ArrowRight className="ml-3 h-6 w-6" />
@@ -59,7 +59,7 @@ const CTA = () => {
           </div>
           
           {/* Trust Indicators - simplified */}
-          <div className="mt-12 animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
+          <div className="animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
             <p className="text-gray-300 text-lg font-medium">Trusted by leading manufacturers</p>
           </div>
         </div>

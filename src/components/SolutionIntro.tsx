@@ -31,7 +31,7 @@ const SolutionIntro = () => {
   ];
 
   return (
-    <section className="py-24 bg-symage-dark relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
@@ -64,14 +64,14 @@ const SolutionIntro = () => {
               {benefits.slice(0, 3).map((benefit, index) => (
                 <div 
                   key={benefit.title}
-                  className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300 animate-scale-in"
+                  className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-symage-blue hover:bg-white/10 transition-all duration-300 animate-scale-in"
                   style={{ 
                     animationDelay: `${index * 0.1}s`, 
                     animationFillMode: 'both' 
                   }}
                 >
-                  <div className="w-16 h-16 bg-symage-blue/20 rounded-xl flex items-center justify-center mb-6">
-                    <benefit.icon className="h-8 w-8 text-symage-blue" strokeWidth={1.5} />
+                  <div className="w-16 h-16 bg-symage-pink/20 rounded-xl flex items-center justify-center mb-6">
+                    <benefit.icon className="h-8 w-8 text-symage-pink" strokeWidth={1.5} />
                   </div>
                   <h4 className="text-xl font-bold text-symage-blue mb-4 font-sans">
                     {benefit.title}
@@ -88,14 +88,14 @@ const SolutionIntro = () => {
               {benefits.slice(3).map((benefit, index) => (
                 <div 
                   key={benefit.title}
-                  className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300 animate-scale-in"
+                  className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-symage-blue hover:bg-white/10 transition-all duration-300 animate-scale-in"
                   style={{ 
                     animationDelay: `${(index + 3) * 0.1}s`, 
                     animationFillMode: 'both' 
                   }}
                 >
-                  <div className="w-16 h-16 bg-symage-blue/20 rounded-xl flex items-center justify-center mb-6">
-                    <benefit.icon className="h-8 w-8 text-symage-blue" strokeWidth={1.5} />
+                  <div className="w-16 h-16 bg-symage-pink/20 rounded-xl flex items-center justify-center mb-6">
+                    <benefit.icon className="h-8 w-8 text-symage-pink" strokeWidth={1.5} />
                   </div>
                   <h4 className="text-xl font-bold text-symage-blue mb-4 font-sans">
                     {benefit.title}
