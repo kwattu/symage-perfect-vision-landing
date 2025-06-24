@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Eye, Target, Zap } from "lucide-react";
 
@@ -19,8 +18,8 @@ const Hero = () => {
       
       <div className="relative container mx-auto px-6 py-20 min-h-screen">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start min-h-screen">
-          {/* Left column - Content - moved down by 1.5" */}
-          <div className="text-white pt-24">
+          {/* Left column - Content - moved down by additional 1" (96px) */}
+          <div className="text-white pt-48">
             {/* Four-line headline with pulsing text */}
             <div className="animate-fade-in">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-12 font-sans">
@@ -59,8 +58,8 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Right column - Hero Image */}
-          <div className="relative animate-scale-in pt-8" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+          {/* Right column - Hero Image - moved down by additional 1" (96px) */}
+          <div className="relative animate-scale-in pt-32" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
             <div className="relative group">
               {/* Main image container with elegant border and shadow */}
               <div className="relative rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl">
