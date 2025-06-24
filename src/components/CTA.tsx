@@ -37,14 +37,14 @@ const CTA = () => {
             </p>
           </div>
           
-          {/* Offer Details */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/10 mb-12 animate-scale-in" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
-            <h3 className="text-2xl font-bold mb-8 font-sans">What You'll Get:</h3>
+          {/* Offer Details - white background with pink checkmarks */}
+          <div className="bg-white rounded-3xl p-8 md:p-12 border border-gray-200 mb-12 animate-scale-in" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+            <h3 className="text-2xl font-bold mb-8 font-sans text-symage-dark">What You'll Get:</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
               {offerPoints.map((point, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-symage-lime flex-shrink-0" />
-                  <span className="text-gray-300">{point}</span>
+                  <CheckCircle className="h-6 w-6 text-symage-pink flex-shrink-0" />
+                  <span className="text-symage-dark">{point}</span>
                 </div>
               ))}
             </div>
@@ -58,9 +58,9 @@ const CTA = () => {
             </Button>
           </div>
           
-          {/* Trust Indicators - simplified */}
+          {/* Trust Indicators - added period */}
           <div className="animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
-            <p className="text-gray-300 text-lg font-medium">Trusted by leading manufacturers</p>
+            <p className="text-gray-300 text-lg font-medium">Trusted by leading manufacturers.</p>
           </div>
         </div>
       </div>

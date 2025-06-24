@@ -83,28 +83,28 @@ const Hero = () => {
               </div>
             </div>
             
-            {/* Enhanced features - fixed to show white text and icons above text */}
+            {/* Enhanced features - updated to pink icons */}
             <div className="animate-fade-in mt-8 -mx-6 px-6" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 text-center">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-blue/20 rounded-xl group-hover:bg-symage-blue/30 transition-colors duration-300 mb-4 mx-auto">
-                    <Target className="h-6 w-6 text-symage-blue" strokeWidth={1.5} />
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-pink/20 rounded-xl group-hover:bg-symage-pink/30 transition-colors duration-300 mb-4 mx-auto">
+                    <Target className="h-6 w-6 text-symage-pink" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-base font-bold mb-2 text-white">100% Accurate</h3>
                   <p className="text-white text-xs leading-relaxed">Perfect labeling eliminates human error</p>
                 </div>
                 
                 <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 text-center">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-purple/20 rounded-xl group-hover:bg-symage-purple/30 transition-colors duration-300 mb-4 mx-auto">
-                    <Zap className="h-6 w-6 text-symage-purple" strokeWidth={1.5} />
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-pink/20 rounded-xl group-hover:bg-symage-pink/30 transition-colors duration-300 mb-4 mx-auto">
+                    <Zap className="h-6 w-6 text-symage-pink" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-base font-bold mb-2 text-white">10x Faster</h3>
                   <p className="text-white text-xs leading-relaxed">Generate millions of images in days</p>
                 </div>
                 
                 <div className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 text-center">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-blue/20 rounded-xl group-hover:bg-symage-blue/30 transition-colors duration-300 mb-4 mx-auto">
-                    <Eye className="h-6 w-6 text-symage-blue" strokeWidth={1.5} />
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-symage-pink/20 rounded-xl group-hover:bg-symage-pink/30 transition-colors duration-300 mb-4 mx-auto">
+                    <Eye className="h-6 w-6 text-symage-pink" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-base font-bold mb-2 text-white">Every Edge Case</h3>
                   <p className="text-white text-xs leading-relaxed">Simulate any defect with precision</p>

@@ -1,3 +1,4 @@
+
 import { ChevronDown } from "lucide-react";
 
 const Solution = () => {
@@ -35,8 +36,8 @@ const Solution = () => {
       
       <div className="relative container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Process Steps with Nested Arrows */}
-          <div className="relative max-w-5xl mx-auto mb-16">
+          {/* Process Steps with more muted arrow colors */}
+          <div className="relative max-w-5xl mx-auto mb-24">
             {processSteps.map((step, index) => (
               <div 
                 key={step.number}
@@ -46,10 +47,11 @@ const Solution = () => {
                   animationFillMode: 'both' 
                 }}
               >
-                {/* Arrow Shape with less vibrant colors */}
+                {/* Arrow Shape with muted colors */}
                 <div 
-                  className="relative bg-gradient-to-r from-blue-600 to-purple-600 p-8 md:p-12"
+                  className="relative p-8 md:p-12"
                   style={{
+                    background: index === 0 ? '#4a5b7a' : index === 1 ? '#6b4d6b' : '#4a7a9a',
                     clipPath: index === processSteps.length - 1 
                       ? 'polygon(0 0, calc(100% - 40px) 0, 100% 50%, calc(100% - 40px) 100%, 0 100%, 40px 50%)'
                       : 'polygon(0 0, calc(100% - 80px) 0, 100% 50%, calc(100% - 80px) 100%, 0 100%, 40px 50%)',

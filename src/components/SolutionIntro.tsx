@@ -64,7 +64,7 @@ const SolutionIntro = () => {
               {benefits.slice(0, 3).map((benefit, index) => (
                 <div 
                   key={benefit.title}
-                  className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-symage-blue hover:bg-white/10 transition-all duration-300 animate-scale-in"
+                  className="bg-white backdrop-blur-sm rounded-2xl p-8 border border-symage-blue hover:bg-gray-50 transition-all duration-300 animate-scale-in"
                   style={{ 
                     animationDelay: `${index * 0.1}s`, 
                     animationFillMode: 'both' 
@@ -76,7 +76,7 @@ const SolutionIntro = () => {
                   <h4 className="text-xl font-bold text-symage-blue mb-4 font-sans">
                     {benefit.title}
                   </h4>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-symage-dark leading-relaxed">
                     {benefit.description}
                   </p>
                 </div>
@@ -88,7 +88,7 @@ const SolutionIntro = () => {
               {benefits.slice(3).map((benefit, index) => (
                 <div 
                   key={benefit.title}
-                  className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-symage-blue hover:bg-white/10 transition-all duration-300 animate-scale-in"
+                  className="bg-white backdrop-blur-sm rounded-2xl p-8 border border-symage-blue hover:bg-gray-50 transition-all duration-300 animate-scale-in"
                   style={{ 
                     animationDelay: `${(index + 3) * 0.1}s`, 
                     animationFillMode: 'both' 
@@ -100,7 +100,7 @@ const SolutionIntro = () => {
                   <h4 className="text-xl font-bold text-symage-blue mb-4 font-sans">
                     {benefit.title}
                   </h4>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-symage-dark leading-relaxed">
                     {benefit.description}
                   </p>
                 </div>
