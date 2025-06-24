@@ -3,7 +3,7 @@ import { AlertTriangle, Clock, Database, Eye, TrendingDown, X } from "lucide-rea
 
 const Problem = () => {
   return (
-    <section className="py-16 bg-symage-dark relative overflow-hidden">
+    <section className="py-8 relative overflow-hidden">
       {/* Elegant background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/6 w-72 h-72 bg-symage-purple/10 rounded-full blur-3xl"></div>
