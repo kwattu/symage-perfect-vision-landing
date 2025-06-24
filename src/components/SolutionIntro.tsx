@@ -56,7 +56,7 @@ const SolutionIntro = () => {
           
           {/* From Data Scarcity to Defect Mastery */}
           <div className="mb-16 animate-fade-in">
-            <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-12 font-sans">
+            <h3 className="text-3xl md:text-4xl font-bold text-center text-symage-blue mb-12 font-sans">
               From Data Scarcity to Defect Mastery
             </h3>
             
@@ -73,7 +73,7 @@ const SolutionIntro = () => {
                   <div className="w-16 h-16 bg-symage-blue/20 rounded-xl flex items-center justify-center mb-6">
                     <benefit.icon className="h-8 w-8 text-symage-blue" strokeWidth={1.5} />
                   </div>
-                  <h4 className="text-xl font-bold text-white mb-4 font-sans">
+                  <h4 className="text-xl font-bold text-symage-blue mb-4 font-sans">
                     {benefit.title}
                   </h4>
                   <p className="text-gray-300 leading-relaxed">
@@ -94,10 +94,10 @@ const SolutionIntro = () => {
                     animationFillMode: 'both' 
                   }}
                 >
-                  <div className="w-16 h-16 bg-symage-purple/20 rounded-xl flex items-center justify-center mb-6">
-                    <benefit.icon className="h-8 w-8 text-symage-purple" strokeWidth={1.5} />
+                  <div className="w-16 h-16 bg-symage-blue/20 rounded-xl flex items-center justify-center mb-6">
+                    <benefit.icon className="h-8 w-8 text-symage-blue" strokeWidth={1.5} />
                   </div>
-                  <h4 className="text-xl font-bold text-white mb-4 font-sans">
+                  <h4 className="text-xl font-bold text-symage-blue mb-4 font-sans">
                     {benefit.title}
                   </h4>
                   <p className="text-gray-300 leading-relaxed">
