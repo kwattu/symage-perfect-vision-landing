@@ -51,7 +51,11 @@ const CTA = () => {
           
           {/* CTA Button with reduced bottom margin */}
           <div className="animate-fade-in mb-6" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
-            <Button size="lg" className="bg-symage-blue hover:bg-symage-blue/90 text-white text-xl px-12 py-6 h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+            <Button 
+              size="lg" 
+              className="bg-symage-blue hover:bg-symage-blue/90 text-white text-xl px-12 py-6 h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+              onClick={() => window.open('https://www.symage.ai/project-inquiry/', '_blank')}
+            >
               Claim My Free Proof-of-Concept Dataset
               <ArrowRight className="ml-3 h-6 w-6" />
             </Button>

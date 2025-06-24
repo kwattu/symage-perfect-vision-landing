@@ -91,7 +91,10 @@ const Industries = () => {
             <p className="text-base text-gray-300 mb-4 max-w-xl mx-auto">
               Symage's physics-based simulation engine can be adapted to virtually any manufacturing or quality control scenario.
             </p>
-            <button className="text-symage-blue hover:text-symage-blue/80 font-semibold text-base underline underline-offset-4 decoration-2 hover:decoration-symage-blue transition-colors">
+            <button 
+              className="text-symage-blue hover:text-symage-blue/80 font-semibold text-base underline underline-offset-4 decoration-2 hover:decoration-symage-blue transition-colors"
+              onClick={() => window.open('https://www.symage.ai/contact/', '_blank')}
+            >
               Contact Our Experts →
             </button>
           </div>

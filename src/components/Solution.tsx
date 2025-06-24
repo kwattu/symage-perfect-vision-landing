@@ -87,11 +87,11 @@ const Solution = () => {
             ))}
           </div>
           
-          {/* Mid-page heading with more space and matching font styling */}
-          <div className="text-center mb-16 animate-fade-in">
-            <h3 className="text-2xl md:text-3xl font-semibold text-gray-300 mb-4 font-sans">
+          {/* Mid-page heading with 2" of space and matching section heading style */}
+          <div className="text-center mb-16 animate-fade-in" style={{ marginTop: '144px' }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-sans">
               Ready to Transform Your Quality Control?
-            </h3>
+            </h2>
           </div>
           
           {/* Process Steps with gradient arrows from deep purple to light blue to pink */}
