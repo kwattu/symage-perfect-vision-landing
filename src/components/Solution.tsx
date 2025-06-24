@@ -46,7 +46,7 @@ const Solution = () => {
           </div>
           
           {/* Value Propositions - white background with deep blue text and pink subheads */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
             {[
               {
                 title: "Perfect Labeling, Every Time",
@@ -87,9 +87,9 @@ const Solution = () => {
             ))}
           </div>
           
-          {/* Mid-page heading instead of button */}
-          <div className="text-center mb-12 animate-fade-in">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-sans">
+          {/* Mid-page heading with more space and matching font styling */}
+          <div className="text-center mb-16 animate-fade-in">
+            <h3 className="text-2xl md:text-3xl font-semibold text-gray-300 mb-4 font-sans">
               Ready to Transform Your Quality Control?
             </h3>
           </div>
