@@ -46,7 +46,7 @@ const Hero = () => {
               </p>
             </div>
             
-            {/* Clean CTA Button - removed margin-bottom */}
+            {/* Clean CTA Button - removed bottom margin */}
             <div className="animate-scale-in" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
               <Button 
                 size="lg" 
