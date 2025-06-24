@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-symage-dark overflow-hidden">
+    <section className="relative min-h-screen bg-symage-dark overflow-hidden pb-20">
       {/* Simplified background elements */}
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>

@@ -1,3 +1,4 @@
+
 import { ChevronDown } from "lucide-react";
 
 const Solution = () => {
@@ -45,7 +46,7 @@ const Solution = () => {
           </div>
           
           {/* Value Propositions - white background with deep blue text and pink subheads */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {[
               {
                 title: "Perfect Labeling, Every Time",
@@ -86,15 +87,15 @@ const Solution = () => {
             ))}
           </div>
           
-          {/* Mid-page heading with additional 2" space to center between sections */}
-          <div className="text-center animate-fade-in" style={{ marginTop: '216px', marginBottom: '72px' }}>
+          {/* Mid-page heading with consistent spacing */}
+          <div className="text-center animate-fade-in mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-sans">
               Ready to Transform Your Quality Control?
             </h2>
           </div>
           
           {/* Process Steps with gradient arrows from deep purple to light blue to pink */}
-          <div className="relative max-w-5xl mx-auto mb-24">
+          <div className="relative max-w-5xl mx-auto mb-16">
             {processSteps.map((step, index) => (
               <div 
                 key={step.number}
@@ -136,9 +137,6 @@ const Solution = () => {
               </div>
             ))}
           </div>
-          
-          {/* Added space after arrows */}
-          <div className="mb-16"></div>
         </div>
       </div>
     </section>
