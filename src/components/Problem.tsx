@@ -9,7 +9,7 @@ const Problem = () => {
         <img 
           src="/lovable-uploads/05ee8c71-8061-4ad0-8540-6869b592526d.png" 
           alt="Manufacturing automation background"
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-30"
         />
         {/* Dark overlay to ensure text readability */}
         <div className="absolute inset-0 bg-symage-dark/80"></div>
