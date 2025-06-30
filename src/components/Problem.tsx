@@ -4,6 +4,17 @@ import { AlertTriangle, Clock, Database, Eye, TrendingDown, X } from "lucide-rea
 const Problem = () => {
   return (
     <section className="py-16 bg-symage-dark relative overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/05ee8c71-8061-4ad0-8540-6869b592526d.png" 
+          alt="Manufacturing automation background"
+          className="w-full h-full object-cover opacity-20"
+        />
+        {/* Dark overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-symage-dark/80"></div>
+      </div>
+      
       {/* Elegant background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/6 w-72 h-72 bg-symage-purple/10 rounded-full blur-3xl"></div>
