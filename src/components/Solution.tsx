@@ -35,16 +35,6 @@ const Solution = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-symage-purple/5 rounded-full blur-3xl"></div>
       
-      {/* Data wave background image - only for upper section */}
-      <div 
-        className="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-30"
-        style={{
-          backgroundImage: `url('/lovable-uploads/cc760ac7-e602-49ea-bbca-a000102e3c78.png')`,
-          maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 80%)',
-          WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 80%)'
-        }}
-      ></div>
-      
       <div className="relative container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
