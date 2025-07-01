@@ -48,76 +48,68 @@ const Solution = () => {
             </p>
           </div>
           
-          {/* Digital wave background positioned behind white boxes - moved up 1.5" */}
-          <div className="relative">
-            <div className="absolute inset-0 -top-44 -bottom-16 -left-8 -right-8">
-              <img 
-                src="/lovable-uploads/5be38b94-0fdc-4f9f-9b9d-68303b4c9ff2.png" 
-                alt="Digital wave background"
-                className="w-full h-full object-cover opacity-25 scale-125"
-              />
-            </div>
-            
-            {/* Value Propositions - white background with deep blue text and pink subheads */}
-            <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-              {[
-                {
-                  title: "Perfect Labeling, Every Time",
-                  description: "Eliminate human error in data annotation. Our physics-based simulation ensures 100% accurate labels for every defect type, giving your AI models the precise ground truth they need to excel."
-                },
-                {
-                  title: "Scale Without Limits", 
-                  description: "Generate millions of training images in days, not years. No more waiting for real defects to occur or manually capturing edge cases. Scale your dataset to match your ambition."
-                },
-                {
-                  title: "Cover Every Edge Case",
-                  description: "Simulate rare defects, extreme lighting conditions, and unusual product variations that would take years to collect naturally. Train robust models that handle real-world complexity."
-                },
-                {
-                  title: "Reduce Costs by 90%",
-                  description: "Skip expensive data collection, manual annotation, and multiple revision cycles. Get production-ready training data at a fraction of traditional costs."
-                },
-                {
-                  title: "Deploy Faster",
-                  description: "Launch your computer vision solutions months ahead of schedule. Perfect training data means fewer iterations, faster convergence, and quicker time-to-market."
-                },
-                {
-                  title: "Maintain Competitive Edge",
-                  description: "Access defect scenarios your competitors have never seen. Build AI models with capabilities that set new industry standards for quality control."
-                }
-              ].map((item, index) => (
-                <div 
-                  key={item.title}
-                  className="bg-white backdrop-blur-sm rounded-2xl p-6 border border-symage-blue hover:bg-gray-50 transition-all duration-300 animate-scale-in"
-                  style={{ 
-                    animationDelay: `${index * 0.1}s`, 
-                    animationFillMode: 'both' 
-                  }}
-                >
-                  <h3 className="text-xl font-bold text-symage-pink mb-4 font-sans">{item.title}</h3>
-                  <p className="text-symage-dark leading-relaxed">{item.description}</p>
-                </div>
-              ))}
-            </div>
-            
-            {/* CTA Section positioned after white boxes */}
-            <div className="relative text-center mb-24 animate-fade-in">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
-                Ready to improve your product quality?
-              </h3>
-              <Button 
-                size="lg" 
-                className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-8 py-4 h-auto rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
-                onClick={() => window.open('https://www.symage.ai/project-inquiry/', '_blank')}
+          {/* Value Propositions - white background with deep blue text and pink subheads */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                title: "Perfect Labeling, Every Time",
+                description: "Eliminate human error in data annotation. Our physics-based simulation ensures 100% accurate labels for every defect type, giving your AI models the precise ground truth they need to excel."
+              },
+              {
+                title: "Scale Without Limits", 
+                description: "Generate millions of training images in days, not years. No more waiting for real defects to occur or manually capturing edge cases. Scale your dataset to match your ambition."
+              },
+              {
+                title: "Cover Every Edge Case",
+                description: "Simulate rare defects, extreme lighting conditions, and unusual product variations that would take years to collect naturally. Train robust models that handle real-world complexity."
+              },
+              {
+                title: "Reduce Costs by 90%",
+                description: "Skip expensive data collection, manual annotation, and multiple revision cycles. Get production-ready training data at a fraction of traditional costs."
+              },
+              {
+                title: "Deploy Faster",
+                description: "Launch your computer vision solutions months ahead of schedule. Perfect training data means fewer iterations, faster convergence, and quicker time-to-market."
+              },
+              {
+                title: "Maintain Competitive Edge",
+                description: "Access defect scenarios your competitors have never seen. Build AI models with capabilities that set new industry standards for quality control."
+              }
+            ].map((item, index) => (
+              <div 
+                key={item.title}
+                className="bg-white backdrop-blur-sm rounded-2xl p-6 border border-symage-blue hover:bg-gray-50 transition-all duration-300 animate-scale-in"
+                style={{ 
+                  animationDelay: `${index * 0.1}s`, 
+                  animationFillMode: 'both' 
+                }}
               >
-                Request your free proof-of-concept dataset
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
+                <h3 className="text-xl font-bold text-symage-pink mb-4 font-sans">{item.title}</h3>
+                <p className="text-symage-dark leading-relaxed">{item.description}</p>
+              </div>
+            ))}
           </div>
           
-          {/* Mid-page heading with additional 2" space to center between sections */}
-          <div className="text-center animate-fade-in" style={{ marginTop: '144px', marginBottom: '72px' }}>
+          {/* CTA Section positioned after white boxes */}
+          <div className="text-center mb-24 animate-fade-in">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
+              Ready to improve your product quality?
+            </h3>
+            <Button 
+              size="lg" 
+              className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-8 py-4 h-auto rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              onClick={() => window.open('https://www.symage.ai/project-inquiry/', '_blank')}
+            >
+              Request your free proof-of-concept dataset
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
+          
+          {/* Section break before process steps */}
+          <div className="w-full h-px bg-gradient-to-r from-transparent via-symage-blue/30 to-transparent mb-16"></div>
+          
+          {/* Mid-page heading with additional space */}
+          <div className="text-center animate-fade-in mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-sans">
               Transform Your Quality Control in 3 Simple Steps
             </h2>
