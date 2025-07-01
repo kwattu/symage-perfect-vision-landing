@@ -35,11 +35,13 @@ const Solution = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-symage-purple/5 rounded-full blur-3xl"></div>
       
-      {/* Data wave background image */}
+      {/* Data wave background image - only for upper section */}
       <div 
         className="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-30"
         style={{
-          backgroundImage: `url('/lovable-uploads/cc760ac7-e602-49ea-bbca-a000102e3c78.png')`
+          backgroundImage: `url('/lovable-uploads/cc760ac7-e602-49ea-bbca-a000102e3c78.png')`,
+          maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 80%)',
+          WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 80%)'
         }}
       ></div>
       
@@ -119,48 +121,74 @@ const Solution = () => {
             </h2>
           </div>
           
-          {/* Process Steps with gradient arrows from deep purple to light blue to pink */}
-          <div className="relative max-w-5xl mx-auto mb-24">
-            {processSteps.map((step, index) => (
-              <div 
-                key={step.number}
-                className="relative mb-8 last:mb-0 animate-scale-in"
-                style={{ 
-                  animationDelay: `${index * 0.2}s`, 
-                  animationFillMode: 'both' 
-                }}
-              >
-                {/* Arrow Shape with gradient from deep purple to light blue to pink */}
+          {/* Process Steps with gradient arrows - left aligned with images on right */}
+          <div className="flex gap-12 max-w-7xl mx-auto mb-24">
+            {/* Left side - Process Steps */}
+            <div className="flex-1">
+              {processSteps.map((step, index) => (
                 <div 
-                  className="relative p-8 md:p-12"
-                  style={{
-                    background: `linear-gradient(45deg, #77489d, #56b2e5, #f159b2)`,
-                    clipPath: index === processSteps.length - 1 
-                      ? 'polygon(0 0, calc(100% - 40px) 0, 100% 50%, calc(100% - 40px) 100%, 0 100%, 40px 50%)'
-                      : 'polygon(0 0, calc(100% - 80px) 0, 100% 50%, calc(100% - 80px) 100%, 0 100%, 40px 50%)',
-                    marginLeft: `${index * 40}px`,
-                    marginRight: index === processSteps.length - 1 ? '0px' : `${(processSteps.length - 1 - index) * 40}px`
+                  key={step.number}
+                  className="relative mb-8 last:mb-0 animate-scale-in"
+                  style={{ 
+                    animationDelay: `${index * 0.2}s`, 
+                    animationFillMode: 'both' 
                   }}
                 >
-                  <div className="flex items-center gap-6">
-                    {/* Step Number */}
-                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-2xl font-bold text-symage-dark">{step.number}</span>
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="flex-1 pr-8">
-                      <h3 className="text-2xl font-bold text-white mb-3 font-sans">
-                        {step.title}
-                      </h3>
-                      <p className="text-white/90 leading-relaxed">
-                        {step.description}
-                      </p>
+                  {/* Arrow Shape with gradient from deep purple to light blue to pink */}
+                  <div 
+                    className="relative p-8 md:p-12 max-w-2xl"
+                    style={{
+                      background: `linear-gradient(45deg, #77489d, #56b2e5, #f159b2)`,
+                      clipPath: index === processSteps.length - 1 
+                        ? 'polygon(0 0, calc(100% - 40px) 0, 100% 50%, calc(100% - 40px) 100%, 0 100%, 40px 50%)'
+                        : 'polygon(0 0, calc(100% - 80px) 0, 100% 50%, calc(100% - 80px) 100%, 0 100%, 40px 50%)'
+                    }}
+                  >
+                    <div className="flex items-center gap-6">
+                      {/* Step Number */}
+                      <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-2xl font-bold text-symage-dark">{step.number}</span>
+                      </div>
+                      
+                      {/* Content */}
+                      <div className="flex-1 pr-8">
+                        <h3 className="text-2xl font-bold text-white mb-3 font-sans">
+                          {step.title}
+                        </h3>
+                        <p className="text-white/90 leading-relaxed">
+                          {step.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
+              ))}
+            </div>
+            
+            {/* Right side - Images */}
+            <div className="flex flex-col gap-8 w-80">
+              <div className="animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+                <img 
+                  src="/lovable-uploads/bbf9af14-9462-4fbd-9648-5067cbb46597.png" 
+                  alt="Metal threaded inserts on surface"
+                  className="w-full h-64 object-cover rounded-xl shadow-lg"
+                />
               </div>
-            ))}
+              <div className="animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'both' }}>
+                <img 
+                  src="/lovable-uploads/0a1711a9-e994-4f8a-b2c6-b248976f2292.png" 
+                  alt="Precision machined metal component"
+                  className="w-full h-64 object-cover rounded-xl shadow-lg"
+                />
+              </div>
+              <div className="animate-fade-in" style={{ animationDelay: '0.7s', animationFillMode: 'both' }}>
+                <img 
+                  src="/lovable-uploads/9709f6ea-70cb-4f11-8196-4ab8352a8244.png" 
+                  alt="Circuit board with damaged component"
+                  className="w-full h-64 object-cover rounded-xl shadow-lg"
+                />
+              </div>
+            </div>
           </div>
           
           {/* Added space after arrows */}
