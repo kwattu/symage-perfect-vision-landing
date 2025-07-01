@@ -17,6 +17,15 @@ const CTA = () => {
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-symage-purple/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-symage-pink/10 rounded-full blur-3xl"></div>
       
+      {/* Manufacturing background image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/8991e84b-4397-47e1-9ad5-e9038d369ced.png" 
+          alt="Manufacturing background"
+          className="w-full h-full object-cover opacity-25"
+        />
+      </div>
+      
       <div className="relative container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Main Headline */}
