@@ -1,4 +1,5 @@
 
+
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -47,9 +48,9 @@ const Solution = () => {
             </p>
           </div>
           
-          {/* Digital wave background positioned behind white boxes - made bigger */}
+          {/* Digital wave background positioned behind white boxes - moved up 1.5" */}
           <div className="relative">
-            <div className="absolute inset-0 -top-16 -bottom-16 -left-8 -right-8">
+            <div className="absolute inset-0 -top-44 -bottom-16 -left-8 -right-8">
               <img 
                 src="/lovable-uploads/5be38b94-0fdc-4f9f-9b9d-68303b4c9ff2.png" 
                 alt="Digital wave background"
@@ -175,3 +176,4 @@ const Solution = () => {
 };
 
 export default Solution;
+
