@@ -1,3 +1,4 @@
+
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -46,18 +47,18 @@ const Solution = () => {
             </p>
           </div>
           
-          {/* Digital wave background positioned behind white boxes */}
+          {/* Digital wave background positioned behind white boxes - made bigger */}
           <div className="relative">
-            <div className="absolute inset-0 -top-8 -bottom-8">
+            <div className="absolute inset-0 -top-16 -bottom-16 -left-8 -right-8">
               <img 
                 src="/lovable-uploads/5be38b94-0fdc-4f9f-9b9d-68303b4c9ff2.png" 
                 alt="Digital wave background"
-                className="w-full h-full object-cover opacity-25"
+                className="w-full h-full object-cover opacity-25 scale-125"
               />
             </div>
             
             {/* Value Propositions - white background with deep blue text and pink subheads */}
-            <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+            <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {[
                 {
                   title: "Perfect Labeling, Every Time",
@@ -97,25 +98,25 @@ const Solution = () => {
                 </div>
               ))}
             </div>
-          </div>
-          
-          {/* New CTA Section */}
-          <div className="text-center mb-16 animate-fade-in">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
-              Ready to improve your product quality?
-            </h3>
-            <Button 
-              size="lg" 
-              className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-8 py-4 h-auto rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
-              onClick={() => window.open('https://www.symage.ai/project-inquiry/', '_blank')}
-            >
-              Request your free proof-of-concept dataset
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            
+            {/* CTA Section positioned after white boxes */}
+            <div className="relative text-center mb-24 animate-fade-in">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
+                Ready to improve your product quality?
+              </h3>
+              <Button 
+                size="lg" 
+                className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-8 py-4 h-auto rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                onClick={() => window.open('https://www.symage.ai/project-inquiry/', '_blank')}
+              >
+                Request your free proof-of-concept dataset
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
           </div>
           
           {/* Mid-page heading with additional 2" space to center between sections */}
-          <div className="text-center animate-fade-in" style={{ marginTop: '216px', marginBottom: '72px' }}>
+          <div className="text-center animate-fade-in" style={{ marginTop: '144px', marginBottom: '72px' }}>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-sans">
               Transform Your Quality Control in 3 Simple Steps
             </h2>
