@@ -20,7 +20,7 @@ const Solution = () => {
     {
       number: "2", 
       title: "We Create Your Synthetic Dataset",
-      description: "Our physics-based simulation engine generates thousands of photorealistic images featuring your exact defect types. Every image is perfectly labeled and ready for machine learning training."
+      description: "Our physics-based simulation engine generates thousands of photorealistic images featuring your exact defect types. We can even work from your 3D CAD model if you have one. Every image is perfectly labeled and ready for machine learning training."
     },
     {
       number: "3",
@@ -111,9 +111,6 @@ const Solution = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
-          
-          {/* Section break before process steps */}
-          <div className="w-full h-px bg-gradient-to-r from-transparent via-symage-blue/30 to-transparent mb-16"></div>
           
           {/* Mid-page heading with additional space */}
           <div className="text-center animate-fade-in mb-16">
