@@ -37,9 +37,9 @@ const Solution = () => {
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-symage-purple/5 rounded-full blur-3xl"></div>
         
-        {/* Data wave background image - cropped to upper section only */}
+        {/* Data wave background image - covers entire upper section */}
         <div 
-          className="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-30"
+          className="absolute inset-0 bg-center bg-cover opacity-30"
           style={{
             backgroundImage: `url('/lovable-uploads/cc760ac7-e602-49ea-bbca-a000102e3c78.png')`
           }}
@@ -104,15 +104,26 @@ const Solution = () => {
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
                 Ready to improve your product quality?
               </h3>
-              <Button 
-                size="lg" 
-                className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-8 py-4 h-auto rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
-                onClick={() => window.open('https://www.symage.ai/project-inquiry/', '_blank')}
-              >
-                Request your free proof-of-concept dataset
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
             </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Section break between CTA and button */}
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-symage-blue/30 to-transparent mb-8"></div>
+      
+      {/* Button section */}
+      <div className="relative container mx-auto px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <Button 
+              size="lg" 
+              className="bg-symage-blue hover:bg-symage-blue/90 text-white text-lg px-8 py-4 h-auto rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              onClick={() => window.open('https://www.symage.ai/project-inquiry/', '_blank')}
+            >
+              Request your free proof-of-concept dataset
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
         </div>
       </div>
