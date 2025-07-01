@@ -89,8 +89,8 @@ const Solution = () => {
             ))}
           </div>
           
-          {/* CTA Section positioned after white boxes - increased bottom margin from mb-16 to mb-22 */}
-          <div className="text-center mb-22 animate-fade-in">
+          {/* CTA Section positioned after white boxes - increased bottom margin from mb-22 to mb-32 for 1.5" space */}
+          <div className="text-center mb-32 animate-fade-in">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
               Ready to improve your product quality?
             </h3>
