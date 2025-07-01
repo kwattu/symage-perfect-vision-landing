@@ -1,5 +1,4 @@
 
-
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -35,6 +34,14 @@ const Solution = () => {
       {/* Background decorative elements */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-symage-purple/5 rounded-full blur-3xl"></div>
+      
+      {/* Data wave background image */}
+      <div 
+        className="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-30"
+        style={{
+          backgroundImage: `url('/lovable-uploads/cc760ac7-e602-49ea-bbca-a000102e3c78.png')`
+        }}
+      ></div>
       
       <div className="relative container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
@@ -91,7 +98,7 @@ const Solution = () => {
           </div>
           
           {/* CTA Section positioned after white boxes */}
-          <div className="text-center mb-24 animate-fade-in">
+          <div className="text-center mb-16 animate-fade-in">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
               Ready to improve your product quality?
             </h3>
@@ -168,4 +175,3 @@ const Solution = () => {
 };
 
 export default Solution;
-
