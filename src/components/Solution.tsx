@@ -1,3 +1,4 @@
+
 import { ChevronDown } from "lucide-react";
 
 const Solution = () => {
@@ -11,7 +12,7 @@ const Solution = () => {
   const processSteps = [
     {
       number: "1",
-      title: "Tell Us What You Need",
+      title: "Tell Us About Your Product",
       description: "Share your specific defect detection requirements, including your product type, common defects, and quality standards. We'll work with you to understand the unique challenges of your manufacturing process."
     },
     {
@@ -28,6 +29,15 @@ const Solution = () => {
 
   return (
     <section className="py-20 bg-symage-dark relative overflow-hidden">
+      {/* New background image with 25% transparency */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/5be38b94-0fdc-4f9f-9b9d-68303b4c9ff2.png" 
+          alt="Digital wave background"
+          className="w-full h-full object-cover opacity-25"
+        />
+      </div>
+      
       {/* Background decorative elements */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-symage-blue/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-symage-purple/5 rounded-full blur-3xl"></div>
