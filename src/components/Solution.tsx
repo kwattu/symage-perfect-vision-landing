@@ -1,4 +1,3 @@
-
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -118,7 +117,7 @@ const Solution = () => {
           {/* Mid-page heading with additional 2" space to center between sections */}
           <div className="text-center animate-fade-in" style={{ marginTop: '216px', marginBottom: '72px' }}>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-sans">
-              Ready to Transform Your Quality Control?
+              Transform Your Quality Control in 3 Simple Steps
             </h2>
           </div>
           
