@@ -104,8 +104,8 @@ const Solution = () => {
             </Button>
           </div>
           
-          {/* Mid-page heading with additional space */}
-          <div className="text-center animate-fade-in mb-16">
+          {/* Mid-page heading with additional space - increased from mb-16 to mb-24 */}
+          <div className="text-center animate-fade-in mb-24">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-sans">
               Transform Your Quality Control in 3 Simple Steps
             </h2>

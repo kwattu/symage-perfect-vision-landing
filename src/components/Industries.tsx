@@ -40,7 +40,7 @@ const Industries = () => {
   ];
 
   return (
-    <section className="py-20 bg-symage-dark">
+    <section className="py-8 bg-symage-dark">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
